@@ -1,9 +1,9 @@
 {
-  "name": "Giovanni Orlando | Web",
-  "short_name": "Giovanni0918",
-  "theme_color": "4CAF50",
-  "background_color": "#4CAF50",
-  "display": "standalone",
-  "scope": "/",
-  "start_url": "/"
+    "name": "Giovanni Orlando | Web",
+    "short_name": "Giovanni0918",
+    "theme_color": "#3F51B5",
+    "background_color": "#3F51B5",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
 }

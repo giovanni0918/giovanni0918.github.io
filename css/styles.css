@@ -1,9 +1,12 @@
 :root {
-    --color-primary: #4CAF50;
-    --color-primary-dark: #388E3C;
-    --color-primary-light: #E8F5E9;
-    --color-primary-accent: #00E676;
+    --color-primary: #3F51B5;
+    --color-primary-dark: #1A237E;
+    --color-primary-light: #E8EAF6;
+    --color-primary-accent: #3D5AFE;
 }
+
+/*============================================================================*/
+
 html, body {
     width: 100%;
     height: 100%;
@@ -12,20 +15,24 @@ html, body {
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    color: black;
 }
 .header {
     width: 100%;
     height: 56px;
     line-height: 56px;
     text-align: center;
-    color: var(--color-primary-accent);
+    color: var(--color-primary);
     background-color: whitesmoke;
     font-size: 1.5em;
     box-shadow: 0 2px 4px #dde;
     z-index: 2;
 }
+.heading {
+    text-align: center;
+}
 h2 {
-    color: var(--color-primary-accent);
+    color: var(--color-primary-dark);
     font-size: 1.3em;
 }
 .content {
@@ -37,7 +44,11 @@ h2 {
     z-index: 1;
     padding: 0 8px;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
+
+/*============================================================================*/
+
 .navbar {
     position: fixed;
     right: 0;
@@ -74,27 +85,16 @@ h2 {
     color: var(--color-primary);
 }
 .navbar__tab a:hover {
-    display: block;
-    width: 100%;
-    text-align: center;
-    line-height: 56px;
-    text-decoration: none;
     background-color: var(--color-primary-light);
-    color: var(--color-primary-accent);
+    color: var(--color-primary-dark);
 }
 .navbar__tab a.active {
-    display: block;
-    width: 100%;
-    text-align: center;
-    line-height: 56px;
-    text-decoration: none;
     background-color: var(--color-primary-light);
-    color: var(--color-primary-accent);
+    color: var(--color-primary-dark);
 }
-.glyphicon {
-    font-size: 1.3em;
-    pointer-events: none;
-}
+
+/*============================================================================*/
+
 a.list-group-item {
     color: var(--color-primary);
     padding: 10px;
@@ -104,11 +104,11 @@ a.list-group-item {
 }
 a.list-group-item:hover {
     background-color: var(--color-primary-light);
-    color: var(--color-primary-accent);
+    color: var(--color-primary-dark);
 }
-.heading {
-    text-align: center;
-}
+
+/*============================================================================*/
+
 img.avatar {
     height: auto;
     margin: 0 auto;
@@ -130,3 +130,5 @@ img.avatar {
         width: 320px;
     }
 }
+
+/*============================================================================*/
