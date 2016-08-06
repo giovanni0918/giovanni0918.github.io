@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,20 +10,41 @@
     <title>Giovanni Orlando | Blog</title>
     <link rel="icon" href="/images/favicon.ico">
     <link rel="manifest" href="/manifest.json">
+
+    <!-- scripts.js -->
+    <script src="/js/blog.js" charset="utf-8"></script>
+
+    <!-- styles.css -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
+    <header class="header">Giovanni Orlando</header>
+    <nav class="navbar" role="navigation">
+        <ul class="navbar__tablist" role="tablist">
+            <li class="navbar__tab" role="tabpanel">
+                <a href="/" role="tab" title="Home">Home</a>
+            </li>
+            <li class="navbar__tab" role="tabpanel">
+                <a href="/pages/twitter" role="tab" title="Twitter">Twitter</a>
+            </li>
+            <li class="navbar__tab" role="tabpanel">
+                <a href="/pages/blog" role="tab" title="Blog" class="active">Blog</a>
+            </li>
+            <li class="navbar__tab" role="tabpanel">
+                <a href="/pages/contact" role="tab" title="Contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <div class="container">
         <main class="content">
-            Blog
+            <h3>Blog</h3>
+            <section id="blog-posts__wrapper">
+                <ul id="blog-post__list" role="list"></ul>
+            </section>
         </main>
     </div>
-    <script>
-        (function(window, document, undefined) {
-            window.location.replace('https://giovanni0918.wordpress.com/blog');
-        })(window, document);
-    </script>
 </body>
 
 </html>
