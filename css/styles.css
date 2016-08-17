@@ -30,10 +30,10 @@ html, body {
     height: 56px;
     line-height: 56px;
     text-align: center;
-    color: var(--color-primary);
-    background-color: whitesmoke;
+    background-color: var(--color-primary);
+    color: whitesmoke;
     font-size: 1.5em;
-    box-shadow: 0 2px 4px #dde;
+    box-shadow: 0 2px 4px var(--color-primary-dark);
     z-index: 2;
 }
 .heading {
@@ -72,7 +72,7 @@ h3 {
     padding: 0;
     margin: 0;
     border: 0;
-    box-shadow: 0 -1px 4px #dde;
+    box-shadow: 0 0 4px var(--color-primary-dark);
     z-index: 2;
 }
 .navbar__tablist {
@@ -94,16 +94,13 @@ h3 {
     text-align: center;
     line-height: 56px;
     text-decoration: none;
-    background-color: whitesmoke;
-    color: var(--color-primary);
+    font-weight: 600;
+    color: whitesmoke;
+    background-color: var(--color-primary);
 }
-.navbar__tab a:hover {
-    background-color: var(--color-primary-light);
-    color: var(--color-primary-dark);
-}
-.navbar__tab a.active {
-    background-color: var(--color-primary-light);
-    color: var(--color-primary-dark);
+.navbar__tab a:hover, .navbar__tab a.active {
+    background-color: var(--color-primary-dark);
+    color: white;
 }
 
 /*============================================================================*
