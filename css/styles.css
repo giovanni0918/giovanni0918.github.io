@@ -141,10 +141,20 @@ a.list-group-item:hover {
     text-align: justify;
 }
 .blog-post__listitem a {
+    display: inline-block;
+    width: 60%;
+    word-wrap: normal;
+    font: 1.1em Arial, Helvetica, sans-serif;
     color: var(--color-primary-accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+.blog-post__listitem a:hover {
+    text-decoration: underline;
 }
 span.date {
     float: right;
+    width: 40%;
     font-size: 0.750em;
     text-align: right;
 }

@@ -41,15 +41,9 @@
             this._posts.forEach((post) => {
                 document.querySelector('#blog-post__list').innerHTML += `
                   <li class="blog-post__listitem">
-                    <div class="col-xs-8">
-                      <a href="${post.short_URL}" target="_blank" title="${post.title}">${post.title}</a>
-                    </div>
-                    <div class="col-xs-4">
-                      <span class="date">${new Date(post.date).toDateString()}</span>
-                    </div>
-                    <div class="col-xs-12">
-                      ${post.excerpt}
-                    </div>
+                    <a href="${post.short_URL}" target="_blank" title="${post.title}">${post.title}</a>
+                    <span class="date">${new Date(post.date).toDateString()}</span>
+                    ${post.excerpt}
                   </li>
                 `;
             });
