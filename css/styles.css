@@ -72,6 +72,7 @@ h3 {
     padding: 0;
     margin: 0;
     border: 0;
+    background-color: var(--color-primary);
     box-shadow: 0 0 4px var(--color-primary-dark);
     z-index: 2;
 }
@@ -146,11 +147,15 @@ a.list-group-item:hover {
     word-wrap: normal;
     font: 1.1em Arial, Helvetica, sans-serif;
     color: var(--color-primary-accent);
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
 }
 .blog-post__listitem a:hover {
     text-decoration: underline;
+}
+.blog-post__listitem p {
+    margin: 8px;
+    text-align: left;
 }
 span.date {
     float: right;
