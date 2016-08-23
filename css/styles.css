@@ -30,17 +30,17 @@ html, body {
     height: 56px;
     line-height: 56px;
     text-align: center;
-    background-color: var(--color-primary);
+    background-color: #3F51B5;
     color: whitesmoke;
     font-size: 1.5em;
-    box-shadow: 0 2px 4px var(--color-primary-dark);
+    box-shadow: 0 2px 4px #1A237E;
     z-index: 2;
 }
 .heading {
     text-align: center;
 }
 h3 {
-    color: var(--color-primary-dark);
+    color: #1A237E;
     font-size: 1.3em;
     margin-left: 4px;
     padding: 16px;
@@ -72,8 +72,8 @@ h3 {
     padding: 0;
     margin: 0;
     border: 0;
-    background-color: var(--color-primary);
-    box-shadow: 0 0 4px var(--color-primary-dark);
+    background-color: #3F51B5;
+    box-shadow: 0 0 4px #1A237E;
     z-index: 2;
 }
 .navbar__tablist {
@@ -97,10 +97,10 @@ h3 {
     text-decoration: none;
     font-weight: 600;
     color: whitesmoke;
-    background-color: var(--color-primary);
+    background-color: #3F51B5;
 }
 .navbar__tab a:hover, .navbar__tab a.active {
-    background-color: var(--color-primary-dark);
+    background-color: #1A237E;
     color: white;
 }
 
@@ -109,7 +109,7 @@ h3 {
  *============================================================================*/
 
 a.list-group-item {
-    color: var(--color-primary);
+    color: #3F51B5;
     padding: 10px;
     margin: 4px;
     border-radius: 2px;
@@ -117,8 +117,8 @@ a.list-group-item {
     overflow-y: auto;
 }
 a.list-group-item:hover {
-    background-color: var(--color-primary-light);
-    color: var(--color-primary-dark);
+    background-color: #E8EAF6;
+    color: #1A237E;
 }
 
 /*============================================================================*
@@ -146,7 +146,7 @@ a.list-group-item:hover {
     width: 60%;
     word-wrap: normal;
     font: 1.1em Arial, Helvetica, sans-serif;
-    color: var(--color-primary-accent);
+    color: #3D5AFE;
     font-weight: 600;
     text-decoration: none;
 }
@@ -180,14 +180,14 @@ span.date {
     margin: 4px;
 }
 .social-media-link:hover {
-    background-color: var(--color-primary-light);
-    color: var(--color-primary-dark);
+    background-color: #E8EAF6;
+    color: #1A237E;
 }
 .social-media-link a {
-    color: var(--color-primary);
+    color: #3F51B5;
 }
 .social-media-link a:hover {
-    color: var(--color-primary-accent);
+    color: #3D5AFE;
 }
 a img {
     width: 36px;
