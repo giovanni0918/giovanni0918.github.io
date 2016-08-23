@@ -31,7 +31,7 @@ html, body {
     line-height: 56px;
     text-align: center;
     background-color: #3F51B5;
-    color: whitesmoke;
+    color: white;
     font-size: 1.5em;
     box-shadow: 0 2px 4px #1A237E;
     z-index: 2;
@@ -96,7 +96,7 @@ h3 {
     line-height: 56px;
     text-decoration: none;
     font-weight: 600;
-    color: whitesmoke;
+    color: white;
     background-color: #3F51B5;
 }
 .navbar__tab a:hover, .navbar__tab a.active {
@@ -184,6 +184,7 @@ span.date {
     color: #1A237E;
 }
 .social-media-link a {
+    display: block;
     color: #3F51B5;
 }
 .social-media-link a:hover {
