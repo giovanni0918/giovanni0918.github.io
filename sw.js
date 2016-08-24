@@ -1,4 +1,4 @@
-importScripts('node_modules/sw-toolbox/sw-toolbox.js');
+importScripts('dist/libs.js');
 toolbox.options.debug = false;
 
 toolbox.precache([

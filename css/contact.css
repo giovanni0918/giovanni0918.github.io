@@ -1,0 +1,56 @@
+/*============================================================================*
+ * Contact
+ *============================================================================*/
+
+.social-media-link__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 32px 0;
+}
+.social-media-link {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+}
+.social-media-link:hover {
+    background-color: #E8EAF6;
+    color: #1A237E;
+}
+.social-media-link a {
+    display: block;
+    color: #3F51B5;
+}
+.social-media-link a:hover {
+    color: #3D5AFE;
+}
+a img {
+    width: 36px;
+    float: right;
+    margin: 8px 8px 0 0;
+}
+p {
+    margin: 0;
+}
+img.avatar {
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    will-change: width;
+    transition-property: width;
+    transition-duration: 0.6s;
+    transition-timing-function: linear;
+}
+@media only screen and (max-width: 768px) {
+    img.avatar {
+        width: 192px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    img.avatar {
+        width: 255px;
+    }
+    img.avatar:hover {
+        width: 320px;
+    }
+}

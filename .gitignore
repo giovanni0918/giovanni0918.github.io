@@ -1,6 +1,6 @@
 #Dependencies
-bower_components
-node_modules/.bin
+/bower_components
+/node_modules
 
 # Compiled source
 *.com

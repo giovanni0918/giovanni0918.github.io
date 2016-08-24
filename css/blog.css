@@ -1,0 +1,42 @@
+/*============================================================================*
+ * Blog
+ *============================================================================*/
+
+#blog-post__list {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.blog-post__listitem {
+    padding: 16px;
+    margin: 1em;
+    background-color: whitesmoke;
+    font: 1.1em Arial, Helvetica, sans-serif;
+    color: black;
+    clear: both;
+    overflow-y: auto;
+    text-align: justify;
+}
+.blog-post__listitem a {
+    display: inline-block;
+    width: 60%;
+    word-wrap: normal;
+    font: 1.1em Arial, Helvetica, sans-serif;
+    color: #3D5AFE;
+    font-weight: 600;
+    text-decoration: none;
+}
+.blog-post__listitem a:hover {
+    text-decoration: underline;
+}
+.blog-post__listitem p {
+    margin: 8px;
+    text-align: left;
+}
+span.date {
+    float: right;
+    width: 40%;
+    font-size: 0.750em;
+    text-align: right;
+}
