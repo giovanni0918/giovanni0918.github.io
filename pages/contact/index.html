@@ -5,7 +5,7 @@ Gmail icon from https://upload.wikimedia.org/wikipedia/commons/4/45/New_Logo_Gma
 Github icon from: https://github.com/logos
 Twitter icon from https://upload.wikimedia.org/wikipedia/en/9/9f/Twitter_bird_logo_2012.svg
 Google plus icon from https://upload.wikimedia.org/wikipedia/commons/5/5c/Google_plus.svg
- -->
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,8 +23,8 @@ Google plus icon from https://upload.wikimedia.org/wikipedia/commons/5/5c/Google
     <script defer src="/js/app.js" charset="utf-8"></script>
 
     <!-- styles.css -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/dist/styles.css">
 </head>
 
 <body>
@@ -45,56 +45,84 @@ Google plus icon from https://upload.wikimedia.org/wikipedia/commons/5/5c/Google
             </li>
         </ul>
     </nav>
-    <div class="container">
-
-        <main class="content">
-            <section id="contact">
-                <h3 class="heading">Contact me:</h3>
-                <div class="col-xs-12 col-sm-4">
-                    <center><img class="avatar" src="/dist/images/IMG_20160731_151704.jpg" alt="Giovanni Orlando avatar"></center>
+    <main class="content">
+        <h3>Contact me</h3>
+        <section class="wrapper--avatar">
+            <center><img class="avatar" src="/dist/images/smaller-2016-08-24T03-05-41.002Z.jpeg" alt="Giovanni Orlando avatar"></center>
+        </section>
+        <section class="wrapper--contact-links">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                
+                <div class="circle circle--gmail">
+                    <a href="mailto:gorlandor@gmail.com">
+                        <img src="/dist/images/gmail__icon.svg" alt="gmail__icon" class="social-media__icon">
+                    </a>
                 </div>
-                <div class="col-xs-12 col-sm-8">
-                    <ul class="social-media-link__list">
-                        <li class="social-media-link">
-                            <a href="tel:+1-787-550-4299">
-                                <img src="/dist/images/phone__icon.svg" alt="phone icon">
-                                <label for="social-media-link--phone">Phone</label>
-                                <p id="social-media-link--phone">787-550-4299</p>
-                            </a>
-                        </li>
-                        <li class="social-media-link">
-                            <a href="mailto:gorlandor@gmail.com" target="_blank">
-                                <img src="/dist/images/gmail__icon.svg" alt="gmail icon">
-                                <label for="social-media-link--phone">Email</label>
-                                <p id="social-media-link--email">gorlandor@gmail.com</p>
-                            </a>
-                        </li>
-                        <li class="social-media-link">
-                            <a href="https://twitter.com/giovanni0918" target="_blank">
-                                <img src="/dist/images/twitter__icon.svg" alt="twitter icon">
-                                <label for="social-media-link--phone">Twitter</label>
-                                <p id="social-media-link--phone">@giovanni0918</p>
-                            </a>
-                        </li>
-                        <li class="social-media-link">
-                            <a href="https://github.com/giovanni0918" target="_blank">
-                                <img src="/dist/images/Octocat.png" alt="github icon">
-                                <label for="social-media-link--github">Github</label>
-                                <p id="social-media-link--github">github.com/giovanni0918</p>
-                            </a>
-                        </li>
-                        <li class="social-media-link">
-                            <a href="https://google.com/+GiovanniOrlandoi7" target="_blank">
-                                <img src="/dist/images/googleplus__icon.svg" alt="google plus icon">
-                                <label for="social-media-link--googleplus">Google+</label>
-                                <p id="social-media-link--phone">google.com/+GiovanniOrlandoi7</p>
-                            </a>
-                        </li>
-                    </ul>
+                <span>gorlandor@gmail.com</span>
+                <br>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                
+                <div class="circle circle--lime">
+                    <a href="tel:+1-787-550-4299">
+                        <img src="/dist/images/phone__icon.svg" alt="phone__icon" class="social-media__icon">
+                    </a>
                 </div>
-            </section>
-        </main>
-    </div>
+                <span>P: 787-550-4299</span>
+                <br>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                
+                <div class="circle circle--twitter">
+                    <a href="https://twitter.com/giovanni0918">
+                        <img src="/dist/images/twitter__icon.svg" alt="twitter__icon" class="social-media__icon">
+                    </a>
+                </div>
+                <span>@giovanni0918</span>
+                <br>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                
+                <div class="circle circle--cyan">
+                    <a href="https://github.com/giovanni0918">
+                        <img src="/dist/images/Octocat.png" alt="Octocat" class="social-media__icon">
+                    </a>
+                </div>
+                <span>github.com/giovanni0918</span>
+                <br>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                
+                <div class="circle circle--brown">
+                    <a href="https://instagram.com/giovanni0918">
+                        <img src="/dist/images/instagram__icon.png" alt="instagram" class="social-media__icon">
+                    </a>
+                </div>
+                <span>@giovanni0918</span>
+                <br>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                
+                <div class="circle circle--facebook">
+                    <a href="https://facebook.com/giovanni0918">
+                        <img src="/dist/images/facebook__icon.svg" alt="facebook__icon" class="social-media__icon">
+                    </a>
+                </div>
+                <span>fb.com/giovanni0918</span>
+                <br>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                
+                <div class="circle">
+                    <a href="https://google.com/+GiovanniOrlandoi7">
+                        <img src="/dist/images/googleplus__icon.svg" alt="googleplus__icon" class="social-media__icon">
+                    </a>
+                </div>
+                <span>/+GiovanniOrlandoi7</span>
+                <br>
+            </div>
+        </section>
+    </main>
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
