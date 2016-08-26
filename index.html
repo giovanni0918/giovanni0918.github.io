@@ -1,178 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Giovanni Orlando Rivera">
-    <meta name="description" content="portfolio site built using es6, css3, and php">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#3F51B5">
-    <title>Giovanni Orlando | Web</title>
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="manifest" href="/manifest.json">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Giovanni Orlando Rivera">
+        <meta name="description" content="portfolio site built using es6, css3, and php">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#3F51B5">
+        <title>Giovanni Orlando | Web</title>
+        <link rel="icon" href="/images/favicon.ico">
+        <link rel="manifest" href="/manifest.json">
 
-    <!-- scripts.js -->
-    <script defer src="/js/app.js" charset="utf-8"></script>
-    <!-- styles.css -->
-    <style media="screen">
-      :root{--color-primary:#3F51B5;--color-primary-dark:#1A237E;--color-primary-light:#E8EAF6;--color-primary-accent:#3D5AFE}html,body{width:100%;height:100%;padding:0;margin:0;border:0;font-family:Arial,Helvetica,sans-serif;font-size:1em;color:black}.header{position:fixed;top:0;width:100%;height:56px;line-height:56px;text-align:center;background-color:#3F51B5;color:white;font-size:1.5em;box-shadow:0 2px 4px #1A237E;z-index:2}h3{color:#1A237E;font-size:1.3em;margin-left:4px;padding:16px;border-left:4px solid indigo}.navbar{position:fixed;right:0;bottom:0;left:0;width:100%;height:56px;padding:0;margin:0;border:0;background-color:#3F51B5;box-shadow:0 0 4px #1A237E;z-index:2}.navbar__tablist{list-style-type:none;width:inherit;height:inherit;padding:0;margin:0;border:0}.navbar__tab{float:left;width:25%;height:inherit}.navbar__tab a{display:block;width:100%;text-align:center;line-height:56px;text-decoration:none;font-weight:600;color:white;background-color:#3F51B5}.navbar__tab a:hover,.navbar__tab a.active{background-color:#1A237E;color:white}.content{position:fixed;top:60px;right:0;bottom:56px;left:0;z-index:1;padding:0 8px;overflow-y:auto;-webkit-overflow-scrolling:touch}.list{list-style-type:none;margin:0;padding:0}.list-item{min-height:72px;background-color:white;box-shadow:0 2px 6px rgba(0,0,0,.3);padding:8px;margin:4px;border-radius:3px}.list-item:hover{background-color:#E8EAF6}.list-item__heading{display:inline-block;width:100%;margin:8px;font:1.1em Arial,Helvetica,sans-serif;color:#3D5AFE;font-weight:700;text-decoration:none}.list-item__heading:hover{text-decoration:underline}.list-item__text{margin:0 8px;font:1em Arial,Helvetica,sans-serif;color:black}.list-item--nested{margin:8px 0}
-    </style>
-</head>
+        <!-- scripts.js -->
+        <script defer src="/js/app.js" charset="utf-8"></script>
+        <!-- styles.css -->
+        <style media="screen">
+            :root{--color-primary:#3F51B5;--color-primary-dark:#1A237E;--color-primary-light:#E8EAF6;--color-primary-accent:#3D5AFE}body,html{width:100%;height:100%;padding:0;margin:0;border:0;font-family:Arial,Helvetica,sans-serif;font-size:1em;color:black}.header{position:fixed;top:0;width:100%;height:56px;line-height:56px;text-align:center;background-color:#3F51B5;color:white;font-size:1.5em;box-shadow:0 2px 4px #1A237E;z-index:2}h3{color:#1A237E;font-size:1.3em;margin-left:4px;padding:16px;border-left:4px solid indigo}.navbar{position:fixed;right:0;bottom:0;left:0;width:100%;height:56px;padding:0;margin:0;border:0;background-color:#3F51B5;box-shadow:0 0 4px #1A237E;z-index:2}.navbar__tablist{list-style-type:none;width:inherit;height:inherit;padding:0;margin:0;border:0}.navbar__tab{float:left;width:25%;height:inherit}.navbar__tab a{display:block;width:100%;text-align:center;line-height:56px;text-decoration:none;font-weight:600;color:white;background-color:#3F51B5}.navbar__tab a.active,.navbar__tab a:hover{background-color:#1A237E;color:white}.content{position:fixed;top:60px;right:0;bottom:56px;left:0;z-index:1;padding:0 8px;overflow-y:auto;-webkit-overflow-scrolling:touch}.list{list-style-type:none;margin:0;padding:0}.list-item{min-height:72px;background-color:white;box-shadow:0 2px 6px rgba(0,0,0,.3);padding:8px;margin:4px;border-radius:3px}@media only screen and (min-width:1024px){.list-item{max-width:768px;margin:4px auto}h3{text-align:center}}@media only screen and (min-width:1440px){.list-item{max-width:992px}}.list-item:hover{background-color:#E8EAF6}.list-item__heading{display:inline-block;width:100%;margin:8px;font:1.1em Arial,Helvetica,sans-serif;color:#3D5AFE;font-weight:700;text-decoration:none}.list-item__heading:hover{text-decoration:underline}.list-item__text{margin:0 8px;font:1em Arial,Helvetica,sans-serif;color:black}.list-item--nested{margin:8px 0}
+        </style>
+    </head>
 
-<body>
-    <header class="header" role="banner">Giovanni Orlando</header>
-    <nav class="navbar" role="navigation">
-        <ul class="navbar__tablist" role="tablist">
-            <li class="navbar__tab" role="tabpanel">
-                <a href="/" role="tab" title="Home" class="active">Home</a>
-            </li>
-            <li class="navbar__tab" role="tabpanel">
-                <a href="/pages/twitter" role="tab" title="Twitter">Twitter</a>
-            </li>
-            <li class="navbar__tab" role="tabpanel">
-                <a href="/pages/blog" role="tab" title="Blog">Blog</a>
-            </li>
-            <li class="navbar__tab" role="tabpanel">
-                <a href="/pages/contact" role="tab" title="Contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <main class="content">
-        <section id="iam">
-            <h3>I Am:</h3>
-            <ul class="list">
-                <li class="list-item">
-                    <a href="#" class="list-item__heading">Food Lover</a>
-                    <p class="list-item__text">Burgers, Pizza, Salad, Steak, you name it.</p>
+    <body>
+        <header class="header" role="banner">Giovanni Orlando</header>
+        <nav class="navbar" role="navigation">
+            <ul class="navbar__tablist" role="tablist">
+                <li class="navbar__tab" role="tabpanel">
+                    <a href="/" role="tab" title="Home" class="active">Home</a>
                 </li>
-                <li class="list-item" title="Android N Developer Preview Review">
-                    <a href="https://giovanni0918.wordpress.com/2016/07/20/android-n-developer-preview-review/" class="list-item__heading" target="_blank">Tech Enthusiast</a>
-                    <p class="list-item__text">Beta all the things! Google Chrome Canary, Android 7.0 Nougat, WebKit.</p>
+                <li class="navbar__tab" role="tabpanel">
+                    <a href="/pages/twitter/" role="tab" title="Twitter">Twitter</a>
                 </li>
-                <li class="list-item" title="Look me up on Github">
-                    <a href="https://github.com/giovanni0918" class="list-item__heading" target="_blank">Web Developer</a>
-                    <p class="list-item__text">Web Apps! Make the Web great, again.</p>
+                <li class="navbar__tab" role="tabpanel">
+                    <a href="/pages/blog/" role="tab" title="Blog">Blog</a>
+                </li>
+                <li class="navbar__tab" role="tabpanel">
+                    <a href="/pages/contact/" role="tab" title="Contact">Contact</a>
                 </li>
             </ul>
-        </section>
+        </nav>
+        <main class="content">
+            <section id="iam">
+                <h3>I Am:</h3>
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#" class="list-item__heading">Food Lover</a>
+                        <p class="list-item__text">Burgers, Pizza, Salad, Steak, you name it.</p>
+                    </li>
+                    <li class="list-item" title="Android N Developer Preview Review">
+                        <a href="https://giovanni0918.wordpress.com/2016/07/20/android-n-developer-preview-review/" class="list-item__heading" target="_blank">Tech Enthusiast</a>
+                        <p class="list-item__text">Beta all the things! Google Chrome Canary, Android 7.0 Nougat, WebKit.</p>
+                    </li>
+                    <li class="list-item" title="Look me up on Github">
+                        <a href="https://github.com/giovanni0918" class="list-item__heading" target="_blank">Web Developer</a>
+                        <p class="list-item__text">Web Apps! Make the Web great, again.</p>
+                    </li>
+                </ul>
+            </section>
 
-        <section id="education">
-            <h3>Education:</h3>
-            <ul class="list">
-                <li class="list-item" title="UPRP Mathematics Syllabi">
-                    <a href="//math.uprrp.edu/english/asunacad/syllabi.php" class="list-item__heading" target="_blank">University of Puerto Rico, Rio Piedras</a>
-                    <p class="list-item__text">Masters degree in Applied Mathematics | present</p>
-                </li>
-                <li class="list-item" title="PUPR Computer Engineering">
-                    <a href="#" class="list-item__heading">Polytechnic University of Puerto Rico</a>
-                    <p class="list-item__text">Bachelor's degree in Computer Engineering | 2016</p>
-                </li>
-                <li class="list-item">
-                    <a href="#" class="list-item__heading">Colegio Maria Auxiliadora</a>
-                    <p class="list-item__text">High school degree | 2011</p>
-                </li>
-            </ul>
-        </section>
+            <section id="education">
+                <h3>Education:</h3>
+                <ul class="list">
+                    <li class="list-item" title="UPRP Mathematics Syllabi">
+                        <a href="//math.uprrp.edu/english/asunacad/syllabi.php" class="list-item__heading" target="_blank">University of Puerto Rico, Rio Piedras</a>
+                        <p class="list-item__text">Masters degree in Applied Mathematics | present</p>
+                    </li>
+                    <li class="list-item" title="PUPR Computer Engineering">
+                        <a href="#" class="list-item__heading">Polytechnic University of Puerto Rico</a>
+                        <p class="list-item__text">Bachelor's degree in Computer Engineering | 2016</p>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-item__heading">Colegio Maria Auxiliadora</a>
+                        <p class="list-item__text">High school degree | 2011</p>
+                    </li>
+                </ul>
+            </section>
 
-        <section id="experience">
-            <h3>Experience:</h3>
-            <ul class="list">
-                <li class="list-item" title="Vyrtuo Corporation">
-                    <a href="#" class="list-item__heading">Vyrtuo Corportation</a>
-                    <p class="list-item__text">Web Developer | 2015 - present</p>
-                </li>
-                <li class="list-item" title="Modernica Group website">
-                    <a href="https://modernica.myshopify.com/" class="list-item__heading" target="_blank">Modernica Group Corp.</a>
-                    <p class="list-item__text">Apple Certified iOS Technician | 2014 - present</p>
-                </li>
-            </ul>
-        </section>
+            <section id="experience">
+                <h3>Experience:</h3>
+                <ul class="list">
+                    <li class="list-item" title="Vyrtuo Corporation">
+                        <a href="#" class="list-item__heading">Vyrtuo Corportation</a>
+                        <p class="list-item__text">Web Developer | 2015 - present</p>
+                    </li>
+                    <li class="list-item" title="Modernica Group website">
+                        <a href="https://modernica.myshopify.com/" class="list-item__heading" target="_blank">Modernica Group Corp.</a>
+                        <p class="list-item__text">Apple Certified iOS Technician | 2014 - present</p>
+                    </li>
+                </ul>
+            </section>
 
-        <section id="skills">
-            <h3>Skills:</h3>
-            <ul class="list">
-                <li class="list-item" title="Link to github.com/giovanni0918">
-                    <a href="https://github.com/giovanni0918" class="list-item__heading" target="_blank">Programming / Markup Languages</a>
-                    <ol>
-                        <li class="list-item--nested">HTML 5</li>
-                        <li class="list-item--nested">CSS 3
-                            <ul>
-                                <li>Bootstrap</li>
-                                <li>Materialize</li>
-                            </ul>
-                        </li>
-                        <li class="list-item--nested">JavaScript (es2015, es2016)
-                            <ul>
-                                <li>jQuery</li>
-                                <li>Angular JS</li>
-                                <li>Polymer</li>
-                            </ul>
-                        </li>
-                        <li class="list-item--nested">PHP</li>
-                        <li class="list-item--nested">MySQL</li>
-                        <li class="list-item--nested">Ruby</li>
-                        <li class="list-item--nested">C++</li>
-                    </ol>
-                </li>
-            </ul>
-        </section>
+            <section id="skills">
+                <h3>Skills:</h3>
+                <ul class="list">
+                    <li class="list-item" title="Link to github.com/giovanni0918">
+                        <a href="https://github.com/giovanni0918" class="list-item__heading" target="_blank">Programming / Markup Languages</a>
+                        <ol>
+                            <li class="list-item--nested">HTML 5</li>
+                            <li class="list-item--nested">CSS 3
+                                <ul>
+                                    <li>Bootstrap</li>
+                                    <li>Materialize</li>
+                                </ul>
+                            </li>
+                            <li class="list-item--nested">JavaScript (es2015, es2016)
+                                <ul>
+                                    <li>jQuery</li>
+                                    <li>Angular JS</li>
+                                    <li>Polymer</li>
+                                </ul>
+                            </li>
+                            <li class="list-item--nested">PHP</li>
+                            <li class="list-item--nested">MySQL</li>
+                            <li class="list-item--nested">Ruby</li>
+                            <li class="list-item--nested">C++</li>
+                        </ol>
+                    </li>
+                </ul>
+            </section>
 
-        <section id="projects">
-            <h3>Projects:</h3>
-            <ul class="list">
-                <li class="list-item" title="Link to omdb-search demo site">
-                    <a href="https://giovanni0918.github.io/omdb-search/" class="list-item__heading" target="_blank">omdb-search</a>
-                    <p class="list-item__text">A Polymer custom element that fetches movie, series, episode data from the Open Movie Database (OMDb) api.</p>
-                </li>
-                <li class="list-item" title="ISMS web app">
-                    <a href="#" class="list-item__heading">Infinity Service Management Solutions (ISMS)</a>
-                    <p class="list-item__text">Web application for Modérnica Group Corp, an Apple Premium Reseller, for creating and managing:</p>
-                    <ol>
-                        <li class="list-item--nested">Appointments</li>
-                        <li class="list-item--nested">Service orders</li>
-                        <li class="list-item--nested">Product orders</li>
-                        <li class="list-item--nested">Tasks</li>
-                    </ol>
-                </li>
-                <li class="list-item" title="Link to my YouTube channel">
-                    <a href="https://www.youtube.com/GiovanniOrlandoi7" class="list-item__heading" target="_blank">youtube.com/GiovanniOrlandoi7</a>
-                    <p class="list-item__text">YouTube channel, where I upload video tutorials on Logic Circuits, Math, Software Development, among other course subjects.</p>
-                </li>
-                <li class="list-item" title="Link to La Mafia, Puerto Rico website">
-                    <a href="//www.lamafiapuertorico.com/" class="list-item__heading">La Mafia, Puerto Rico - App Backend</a>
-                    <p class="list-item__text">Administrator site, Application Web Service, and Database Design / Management.</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
+            <section id="projects">
+                <h3>Projects:</h3>
+                <ul class="list">
+                    <li class="list-item" title="Link to omdb-search demo site">
+                        <a href="https://giovanni0918.github.io/omdb-search/" class="list-item__heading" target="_blank">omdb-search</a>
+                        <p class="list-item__text">A Polymer custom element that fetches movie, series, episode data from the Open Movie Database (OMDb) api.</p>
+                    </li>
+                    <li class="list-item" title="ISMS web app">
+                        <a href="#" class="list-item__heading">Infinity Service Management Solutions (ISMS)</a>
+                        <p class="list-item__text">Web application for Modérnica Group Corp, an Apple Premium Reseller, for creating and managing:</p>
+                        <ol>
+                            <li class="list-item--nested">Appointments</li>
+                            <li class="list-item--nested">Service orders</li>
+                            <li class="list-item--nested">Product orders</li>
+                            <li class="list-item--nested">Tasks</li>
+                        </ol>
+                    </li>
+                    <li class="list-item" title="Link to my YouTube channel">
+                        <a href="https://www.youtube.com/GiovanniOrlandoi7" class="list-item__heading" target="_blank">youtube.com/GiovanniOrlandoi7</a>
+                        <p class="list-item__text">YouTube channel, where I upload video tutorials on Logic Circuits, Math, Software Development, among other course subjects.</p>
+                    </li>
+                    <li class="list-item" title="Link to La Mafia, Puerto Rico website">
+                        <a href="//www.lamafiapuertorico.com/" class="list-item__heading">La Mafia, Puerto Rico - App Backend</a>
+                        <p class="list-item__text">Administrator site, Application Web Service, and Database Design / Management.</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                },
+                i[r].l = 1 * new Date();
+                a = s.createElement(o),
                 m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-82693415-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <script>
-        //setup SW
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker
-                .register('/sw.js')
-                .then(function() {
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-82693415-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script>
+            //setup SW
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js').then(function() {
                     console.log('SW registered');
-                })
-                .catch(function() {
+                }).catch(function() {
                     console.warn('SW offline');
                 });
-        }
-    </script>
-</body>
+            }
+        </script>
+    </body>
 
 </html>
