@@ -1,5 +1,6 @@
 'use strict';
 const gulp = require('gulp');
+const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const cssMin = require('gulp-css');
@@ -23,6 +24,7 @@ gulp.task('css', function() {
         .pipe(cssMin())
         .pipe(gulp.dest('./dist'));
 });
+
 gulp.task('scripts', function() {
     gulp.src([
             './js/jquery-2.2.4.js',
@@ -33,6 +35,24 @@ gulp.task('scripts', function() {
         ])
         .pipe(concat('libs.js'))
         .pipe(uglify())
+        .pipe(gulp.dest('./dist'));
+
+    gulp.src([
+            './js/app.js',
+            './js/blog.js',
+            './js/contact.js'
+        ])
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(concat('scripts.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist'));
+
+    gulp.src('./js/blog.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
         .pipe(gulp.dest('./dist'));
 
     gulp.src('./node_modules/sw-toolbox/sw-toolbox.js')
