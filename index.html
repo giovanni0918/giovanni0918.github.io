@@ -183,10 +183,10 @@
         <script>
             //setup SW
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/sw.js').then(() => {
+                navigator.serviceWorker.register('/sw.js').then(function() {
                     console.log('SW registered');
-                }).catch(e => {
-                    console.warn(e);
+                }).catch(function(e) {
+                    console.warn('SW offline');
                 });
             }
         </script>
