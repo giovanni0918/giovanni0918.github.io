@@ -9,9 +9,9 @@ const imagemin = require('gulp-imagemin');
 gulp.task('default', ['css', 'imagemin', 'scripts']);
 
 gulp.task('imagemin', () =>
-    gulp.src('images/*')
+    gulp.src('./images/**')
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('./dist/images'))
 );
 
 gulp.task('css', function() {
