@@ -57,7 +57,12 @@ h3 {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
-
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 /*============================================================================*
  * Navigation
  *============================================================================*/

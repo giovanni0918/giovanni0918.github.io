@@ -39,10 +39,13 @@
             const data = JSON.parse(this._xhr.responseText);
             this._posts = data.posts;
             this._posts.forEach((post) => {
-                document.querySelector('#blog-post__list').innerHTML += `
-                  <li class="blog-post__listitem">
-                    <a href="${post.short_URL}" target="_blank" title="${post.title}">${post.title}</a>
-                    <span class="date">${new Date(post.date).toDateString()}</span>
+                document.querySelector('.blog').innerHTML += `
+                  <li class="blog-post flex-center">
+                    <a class="blog-post__title" href="${post.short_URL}" target="_blank" title="${post.title}">${post.title}</a>
+                    <span class="blog-post__date">${new Date(post.date).toDateString()}</span>
+                    <div class="blog-post__img-wrapper">
+                      <img class="blog-post__img" src="${post.featured_image}" alt="${post.title} img">
+                    </div>
                     ${post.excerpt}
                   </li>
                 `;

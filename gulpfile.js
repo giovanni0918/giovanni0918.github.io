@@ -6,7 +6,7 @@ const concat = require('gulp-concat');
 const cssMin = require('gulp-css');
 const imagemin = require('gulp-imagemin');
 
-gulp.task('default', ['css', 'imagemin', 'scripts']);
+gulp.task('default', ['styles', 'imagemin', 'scripts']);
 
 gulp.task('imagemin', () =>
     gulp.src('./images/**')
@@ -14,7 +14,7 @@ gulp.task('imagemin', () =>
     .pipe(gulp.dest('./dist/images'))
 );
 
-gulp.task('css', function() {
+gulp.task('styles', function() {
     gulp.src([
             './css/main.css',
             './css/blog.css',

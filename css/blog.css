@@ -2,41 +2,51 @@
  * Blog
  *============================================================================*/
 
-#blog-post__list {
+.blog {
     list-style-type: none;
     width: 100%;
     margin: 0;
     padding: 0;
 }
-.blog-post__listitem {
+.blog-post {
+    max-width: 768px;
     padding: 16px;
-    margin: 1em;
-    background-color: whitesmoke;
+    margin: 1em auto;
+    background-color: white;
     font: 1.1em Arial, Helvetica, sans-serif;
     color: black;
     clear: both;
     overflow-y: auto;
-    text-align: justify;
+    /*text-align: justify;*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
-.blog-post__listitem a {
+.blog-post__title {
     display: inline-block;
-    width: 60%;
+    /*width: 60%;*/
     word-wrap: normal;
     font: 1.1em Arial, Helvetica, sans-serif;
     color: #3D5AFE;
     font-weight: 600;
     text-decoration: none;
 }
-.blog-post__listitem a:hover {
+.blog-post__title:hover {
     text-decoration: underline;
 }
-.blog-post__listitem p {
-    margin: 8px;
-    text-align: left;
+.blog-post p {
+    margin-top: 0.5em;
+    font: 0.875em Arial, Helvetica, sans-serif;
 }
-span.date {
-    float: right;
-    width: 40%;
+.blog-post__img-wrapper{
+    max-height: 300px;
+    overflow-y: hidden;
+}
+.blog-post__img{
+    width: 100%;
+}
+.blog-post__date {
+    /*float: right;*/
+    /*width: 40%;*/
     font-size: 0.750em;
-    text-align: right;
+    color:black;
+    /*text-align: right;*/
 }

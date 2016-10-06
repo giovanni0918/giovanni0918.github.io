@@ -17,12 +17,8 @@
   'use strict';
   class App {
     constructor() {
-      this._tabList = document.querySelectorAll('.navbar__tab');
+      this._tabList = document.querySelectorAll('a[role=tab]');
       this._tabArray = Array.from(this._tabList);
-
-      this._listItemsEl = document.querySelectorAll('.list-group-item');
-      this._listItemsArray = Array.from(this._listItemsEl);
-
       this._onLoad = this._onLoad.bind(this);
       this.addEventListeners();
     }
@@ -31,8 +27,11 @@
       document.addEventListener('DOMContentLoaded', this._onLoad);
     }
     _onLoad(event) {
-      console.log('tabs', this._tabArray);
-      console.log('li', this._listItemsArray);
+      this._tabArray.forEach((tab)=> tab.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = tab.href;
+      }));
+      console.debug({'tabs': this._tabArray});
     }
   }
   new App();

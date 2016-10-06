@@ -54,7 +54,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 var data = JSON.parse(this._xhr.responseText);
                 this._posts = data.posts;
                 this._posts.forEach(function (post) {
-                    document.querySelector('#blog-post__list').innerHTML += '\n                  <li class="blog-post__listitem">\n                    <a href="' + post.short_URL + '" target="_blank" title="' + post.title + '">' + post.title + '</a>\n                    <span class="date">' + new Date(post.date).toDateString() + '</span>\n                    ' + post.excerpt + '\n                  </li>\n                ';
+                    document.querySelector('.blog').innerHTML += '\n                  <li class="blog-post flex-center">\n                    <a class="blog-post__title" href="' + post.short_URL + '" target="_blank" title="' + post.title + '">' + post.title + '</a>\n                    <span class="blog-post__date">' + new Date(post.date).toDateString() + '</span>\n                    <div class="blog-post__img-wrapper">\n                      <img class="blog-post__img" src="' + post.featured_image + '" alt="' + post.title + ' img">\n                    </div>\n                    ' + post.excerpt + '\n                  </li>\n                ';
                 });
             }
         }, {
