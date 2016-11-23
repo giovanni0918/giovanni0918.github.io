@@ -41,7 +41,7 @@
             this._posts.forEach((post) => {
                 document.querySelector('.blog').innerHTML += `
                   <li class="blog-post flex-center">
-                    <a class="blog-post__title" href="${post.short_URL}" target="_blank" title="${post.title}">${post.title}</a>
+                    <a class="blog-post__title" href="${post.short_URL}" target="_blank" rel="noopener" title="${post.title}">${post.title}</a>
                     <span class="blog-post__date">${new Date(post.date).toDateString()}</span>
                     <div class="blog-post__img-wrapper">
                       <img class="blog-post__img" src="${post.featured_image}" alt="${post.title} img">
