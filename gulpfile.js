@@ -40,19 +40,27 @@ gulp.task('scripts', function() {
     gulp.src([
             './js/app.js',
             './js/blog.js',
-            './js/contact.js'
+            './js/contact.js',
+            './js/repos.js'
         ])
         .pipe(babel({
             presets: ['es2015']
         }))
         .pipe(concat('scripts.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist'));    
 
     gulp.src('./js/blog.js')
         .pipe(babel({
             presets: ['es2015']
         }))
+        .pipe(gulp.dest('./dist'));
+    
+    gulp.src('./js/repos.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(uglify())
         .pipe(gulp.dest('./dist'));
 
     gulp.src('./node_modules/sw-toolbox/sw-toolbox.js')
