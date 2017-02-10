@@ -10,7 +10,7 @@
             response.json()
                 .then(data => {
                     let repos = data.map((repo) => {
-                        return { id: repo.id, name: repo.name, description: repo.description, homepage: repo.homepage }
+                        return { id: repo.id, name: repo.name, description: repo.description, homepage: repo.homepage, html_url: repo.html_url }
                     }).sort((a, b) => b.id - a.id);
 
                     let container = document.querySelector("#repos .list");
@@ -19,13 +19,13 @@
 
                         if (repo.homepage) {
                             return `<li class="list-item" title="${repo.name.replace(/[-_]+/g, ' ')}">
-                                <a href="https://giovanni0918.github.io/react-starter-kit/" class="list-item__heading repo-title" target="_blank" rel="noopener">${repo.name.replace(/[-_]+/g, ' ')}</a>
+                                <a href="${repo.html_url}" class="list-item__heading repo-title" target="_blank" rel="noopener">${repo.name.replace(/[-_]+/g, ' ')}</a>
                                 <p class="list-item__text">${repo.description}</p>
                                 <p class="list-item__text">Demo link: <a href="${repo.homepage}">${repo.homepage}</a></p>
                             </li>`;
                         } else {
                             return `<li class="list-item repo-title" title="${repo.name.replace(/[-_]+/g, ' ')}">
-                                <a href="https://giovanni0918.github.io/react-starter-kit/" class="list-item__heading repo-title" target="_blank" rel="noopener">${repo.name.replace(/[-_]+/g, ' ')}</a>
+                                <a href="${repo.html_url}" class="list-item__heading repo-title" target="_blank" rel="noopener">${repo.name.replace(/[-_]+/g, ' ')}</a>
                                 <p class="list-item__text">${repo.description}</p>			            
                             </li>`;
                         }
