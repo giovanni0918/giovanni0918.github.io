@@ -46,20 +46,6 @@ gulp.task('scripts', function() {
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(concat('scripts.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('./dist'));    
-
-    gulp.src('./js/blog.js')
-        .pipe(babel({
-            presets: ['es2015']
-        }))
-        .pipe(gulp.dest('./dist'));
-    
-    gulp.src('./js/repos.js')
-        .pipe(babel({
-            presets: ['es2015']
-        }))
         .pipe(uglify())
         .pipe(gulp.dest('./dist'));
 

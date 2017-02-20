@@ -13,26 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-(function (window, document, undefined) {
+((document, navigator, standalone) => {
   'use strict';
-  class App {
-    constructor() {
-      this._tabList = document.querySelectorAll('a[role=tab]');
-      this._tabArray = Array.from(this._tabList);
-      this._onLoad = this._onLoad.bind(this);
-      this.addEventListeners();
-    }
-    addEventListeners() {
-      console.debug({'init':'App'});
-      document.addEventListener('DOMContentLoaded', this._onLoad);
-    }
-    _onLoad(event) {
-      this._tabArray.forEach((tab)=> tab.addEventListener('click', (event) => {
+
+  if ((standalone in navigator) && navigator[standalone]) {
+
+    let currentNode, location = document.location, stop = /^(a|html)$/i;
+    let onClickHandler = (event) => {
+
+      currentNode = event.target;
+      while (!(stop).test(currentNode.nodeName)) {
+        currentNode = currentNode.parentNode;
+      }
+
+      if ('href' in currentNode
+        && (currentNode.href.indexOf('http') || currentNode.href.indexOf(location.host))) {
         event.preventDefault();
-        window.location.href = tab.href;
-      }));
-      console.debug({'tabs': this._tabArray});
-    }
+        location.href = currentNode.href;
+      }
+    };
+
+    document.addEventListener('click', onClickHandler, false);
   }
-  new App();
-})(window, document);
+  console.debug({ 'App': 'init' });
+
+})(document, window.navigator, 'standalone');

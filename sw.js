@@ -14,7 +14,8 @@ toolbox.precache([
     '/dist/images/twitter__icon.svg',
     '/dist/images/googleplus__icon.svg',
     '/dist/images/youtube__icon.png',
-    '/js/app.js',
+    '/dist/app.js',
+    '/dist/repos.js',
     '/pages/blog/',
     '/pages/contact/',
     '/pages/twitter/'
@@ -31,7 +32,8 @@ toolbox.router.get('/dist/images/facebook__icon.svg', toolbox.fastest);
 toolbox.router.get('/dist/images/twitter__icon.svg', toolbox.fastest);
 toolbox.router.get('/dist/images/googleplus__icon.svg', toolbox.fastest);
 toolbox.router.get('/dist/images/youtube__icon.png', toolbox.fastest);
-toolbox.router.get('/js/app.js', toolbox.fastest);
+toolbox.router.get('/dist/app.js', toolbox.fastest);
+toolbox.router.get('/dist/repos.js', toolbox.fastest);
 toolbox.router.get('/pages/blog/', toolbox.fastest);
 toolbox.router.get('/pages/contact/', toolbox.fastest);
 toolbox.router.get('/pages/twitter/', toolbox.fastest);

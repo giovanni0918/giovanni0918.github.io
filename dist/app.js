@@ -1,0 +1,1 @@
+"use strict";!function(e,t,n){if(n in t&&t[n]){var i=void 0,o=e.location,r=/^(a|html)$/i,a=function(e){for(i=e.target;!r.test(i.nodeName);)i=i.parentNode;"href"in i&&(i.href.indexOf("http")||i.href.indexOf(o.host))&&(e.preventDefault(),o.href=i.href)};e.addEventListener("click",a,!1)}console.debug({App:"init"})}(document,window.navigator,"standalone");
