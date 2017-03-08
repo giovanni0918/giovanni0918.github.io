@@ -17,7 +17,7 @@ title: Giovanni0918 👑 Web
 author: Giovanni Orlando
 email: gorlandor@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Computer Engineer • Food Lover • Tech Enthusiast • https://giovanni-orlando.com • @giovanni0918
+  Portfolio Website for Giovanni Orlando, Powered by Jekyll. Computer Engineer • Food Lover • Tech Enthusiast • https://giovanni-orlando.com • @giovanni0918
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://giovanni-orlando.com
 enforce_ssl: giovanni-orlando.com
