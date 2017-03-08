@@ -5,52 +5,64 @@ const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const cssMin = require('gulp-css');
 const imagemin = require('gulp-imagemin');
+const sass = require('gulp-sass');
 
-gulp.task('default', ['styles', 'imagemin', 'scripts']);
-
-gulp.task('imagemin', () =>
+gulp.task('imagemin', (done) =>
     gulp.src('./images/**')
-    .pipe(imagemin())
-    .pipe(gulp.dest('./dist/images'))
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/images'))
 );
 
-gulp.task('styles', function() {
-    gulp.src([
-            './css/main.css',
-            './css/blog.css',
-            './css/contact.css',
-        ])
+gulp.task('sass', () =>
+    gulp.src('./_sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./_assets/styles'))
+);
+
+gulp.task('styles', function (done) {
+    gulp.src('./_assets/styles/**/*.css')
         .pipe(concat('styles.css'))
         .pipe(cssMin())
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist/styles'));
+    done();
 });
 
-gulp.task('scripts', function() {
+gulp.task('scripts', function (done) {
     gulp.src([
-            './js/jquery-2.2.4.js',
-            './js/bootstrap.min.js',
-            './js/angular.js',
-            './js/angular-cookies.js',
-            './node_modules/sw-toolbox/sw-toolbox.js'
-        ])
-        .pipe(concat('libs.js'))
+
+        './_scripts/jquery-2.2.4.js',
+        './_scripts/bootstrap.min.js',
+        './_scripts/angular.js',
+        './_scripts/angular-cookies.js',
+        './node_modules/sw-toolbox/sw-toolbox.js'
+
+    ]).pipe(concat('libs.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist/scripts'));
 
     gulp.src([
-            './js/app.js',
-            './js/blog.js',
-            './js/contact.js',
-            './js/repos.js'
-        ])
-        .pipe(babel({
-            presets: ['es2015']
-        }))
-        .pipe(uglify())
-        .pipe(gulp.dest('./dist'));
+
+        './_scripts/app.js',
+        './_scripts/blog.js',
+        './_scripts/contact.js',
+        './_scripts/repos.js'
+
+    ]).pipe(babel({
+        presets: ['es2015']
+    })).pipe(uglify())
+        .pipe(gulp.dest('./dist/scripts'));
 
     gulp.src('./node_modules/sw-toolbox/sw-toolbox.js')
         .pipe(concat('sw-toolbox.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./dist'));
+
+    done();
 });
+gulp.task('default',
+    gulp.series(
+        'sass',
+        'styles',
+        gulp.parallel('scripts', 'imagemin')
+    )
+);

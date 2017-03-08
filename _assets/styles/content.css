@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.page-content {
+  min-height: 80vh; }
+
+.content-wrapper {
+  max-width: 992px;
+  margin: 1em;
+  padding: 1em; }
+
+div.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  div.container:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; }
+    div.container:nth-of-type(odd) a:hover, div.container:nth-of-type(odd) a:focus {
+      color: #E91E63;
+      text-decoration: underline; }
+  div.container:nth-of-type(even) {
+    background-color: rgba(85, 85, 221, 0.6);
+    color: black; }
+    div.container:nth-of-type(even) a:hover, div.container:nth-of-type(even) a:focus {
+      text-decoration: underline; }
+  div.container.food-lover {
+    background-image: url("/images/food-lover.svg");
+    background-color: #25D197;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: top right; }
+  div.container.tech-enthusiast {
+    background-image: url("/images/tech-enthusiast.svg");
+    /*background-size: cover;*/
+    background-color: #1985A1;
+    background-repeat: no-repeat;
+    background-position: top right; }
+  div.container.container.web-developer {
+    background-image: url("/images/web-developer.svg");
+    background-color: #8D5A97;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: top right; }
+  div.container.social {
+    background-image: url("/images/web-developer.svg");
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: top left; }
+    div.container.social h2 {
+      font-size: 1rem;
+      text-transform: capitalize; }
+      div.container.social h2 .social-link__list {
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+        div.container.social h2 .social-link__list-item {
+          margin: 0.5rem 0; }
+          div.container.social h2 .social-link__list-item a {
+            font-size: 1rem; }
+            div.container.social h2 .social-link__list-item a:link, div.container.social h2 .social-link__list-item a:visited {
+              color: white; }
+            div.container.social h2 .social-link__list-item a:focus, div.container.social h2 .social-link__list-item ahover, div.container.social h2 .social-link__list-item a:active {
+              color: #E91E63; }
+            @media only screen and (min-width: 768px) {
+              div.container.social h2 .social-link__list-item a {
+                font-size: 1.125rem; } }
+            @media only screen and (min-width: 992px) {
+              div.container.social h2 .social-link__list-item a {
+                font-size: 1.25rem; } }
+  @media only screen and (min-width: 992px) {
+    div.container.iam {
+      flex-direction: row; } }
+  div.container.iam div.container:nth-of-type(odd), div.container.iam div.container:nth-of-type(even) {
+    flex: 1; }
+    @media only screen and (max-width: 768px) {
+      div.container.iam div.container:nth-of-type(odd), div.container.iam div.container:nth-of-type(even) {
+        min-height: 33vh; } }
+    @media only screen and (min-width: 992px) {
+      div.container.iam div.container:nth-of-type(odd), div.container.iam div.container:nth-of-type(even) {
+        background-size: 80%;
+        background-position: top center; } }
+  div.container.iam a:hover, div.container.iam div.container.iam a:focus {
+    color: white; }
+  div.container h2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Courier New, Courier, monospace; }
+
+.section.section--about-me p {
+  text-align: justify; }
+
+.section.section--about-me h1,
+.section.section--education h1,
+.section.section--certifications h1,
+.section.section--experience h1,
+.section.section--skills h1,
+.section.section--repos h1 {
+  margin: 0.75em 0;
+  color: #2a7ae2;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #2a7ae2; }
+  @media only screen and (min-width: 425px) {
+    .section.section--about-me h1,
+    .section.section--education h1,
+    .section.section--certifications h1,
+    .section.section--experience h1,
+    .section.section--skills h1,
+    .section.section--repos h1 {
+      font-size: 1.1rem; } }
+  @media only screen and (min-width: 768px) {
+    .section.section--about-me h1,
+    .section.section--education h1,
+    .section.section--certifications h1,
+    .section.section--experience h1,
+    .section.section--skills h1,
+    .section.section--repos h1 {
+      font-size: 1.3rem; } }
+
+.section.section--about-me p,
+.section.section--education p,
+.section.section--certifications p,
+.section.section--experience p,
+.section.section--skills p,
+.section.section--repos p {
+  margin: 0.5em 0.5em 0 0.5em; }
+  @media only screen and (min-width: 768px) {
+    .section.section--about-me p,
+    .section.section--education p,
+    .section.section--certifications p,
+    .section.section--experience p,
+    .section.section--skills p,
+    .section.section--repos p {
+      margin: 0.5em 0.5em 0 0.5em; } }
+
+.section.section--about-me a,
+.section.section--education a,
+.section.section--certifications a,
+.section.section--experience a,
+.section.section--skills a,
+.section.section--repos a {
+  color: #2a7ae2; }
+
+.post-content a:link, .post-content a:visited {
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: 700;
+  font-family: Courier New, Courier, monospace; }
+
+.post-content p {
+  margin: 0.75em;
+  color: black;
+  font-size: 14px;
+  text-align: justify; }
+  @media only screen and (min-width: 425px) {
+    .post-content p {
+      font-size: 1rem; } }
+
+.post-content li {
+  font-size: 14px; }
+  .post-content li p {
+    text-align: left; }
+    @media only screen and (min-width: 425px) {
+      .post-content li p {
+        font-size: 1rem; } }

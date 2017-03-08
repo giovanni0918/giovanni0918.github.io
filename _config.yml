@@ -1,2 +1,69 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Giovanni0918 👑 Web
+author: Giovanni Orlando
+email: gorlandor@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Computer Engineer • Food Lover • Tech Enthusiast • https://giovanni-orlando.com • @giovanni0918
+baseurl: "" # the subpath of your site, e.g. /blog
 url: https://giovanni-orlando.com
 enforce_ssl: giovanni-orlando.com
+repository: giovanni0918/giovanni0918.github.io
+profiles:
+ - account: facebook
+   username: giovanni0918
+ - account: github
+   username: giovanni0918
+ - account: google
+   username: +giovanniorlandoi7
+ - account: instagram
+   username: giovanni0918
+ - account: medium
+   username: giovanni0918
+ - account: pinterest
+   username: giovanniorlando
+ - account: tumblr
+   username: giovanni0918
+ - account: twitter
+   username: giovanni0918
+ - account: youtube
+   username: giovanniorlandoi7
+
+tabs: 
+ - title: Home
+   url: /
+
+ - title: Twitter
+   url: /pages/twitter/
+
+ - title: Blog
+   url: /pages/blog/
+
+ - title: Contact
+   url: /pages/contact/
+
+github: [metadata]
+# Build settings
+markdown: kramdown
+# theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-timeago
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

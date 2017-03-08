@@ -1,0 +1,51 @@
+.blog {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    &-post {
+        max-width: 768px;
+        padding: 1rem;
+        margin: 1rem 1.5rem;
+        background-color: white;
+        font: 1.1rem Arial, Helvetica, sans-serif;
+        color: black;
+        clear: both;
+        overflow-y: auto;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+
+        &.blog-post.flex-center p{
+            margin: 1rem 0;
+        }
+        &__date {
+            font-size: 0.750em;
+            color:black;
+        }
+        &__title {
+            display: inline-block;
+            word-wrap: normal;
+            font: 1.25rem Arial, Helvetica, sans-serif;
+            color: #3D5AFE;
+            font-weight: 600;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &__img {
+            width: 100%;
+
+            &-wrapper{
+                background:#fdfdfd;
+                max-height: 300px;
+                overflow-y: hidden;
+            }
+        }
+        p {
+            margin-top: 0.5rem;
+            font: 0.875rem Arial, Helvetica, sans-serif;
+        }
+    }
+}

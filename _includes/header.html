@@ -1,0 +1,21 @@
+<header class="header flex-vertically" role="banner">
+
+  <a class="header__link" href="/">
+
+    {% if page.url == "/pages/twitter/" %} 
+      {{ site.title }} 
+    {% else %} 
+      Giovanni Orlando ⚡
+    {% endif %}
+    
+  </a>
+  
+  <!--<div class="circle">G</div>-->  
+  
+</header>
+<nav class="flex-horizontally header__nav">
+    {% for tab in site.tabs %}
+      <a href="{{tab.url}}" title="{{tab.title}} tab" 
+        {% if page.url == {{tab.url}} %} class="nav__link active" {% else %} class="nav__link" {% endif %}>{{tab.title}}</a>
+    {% endfor %}
+  </nav>

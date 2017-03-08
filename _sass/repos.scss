@@ -1,0 +1,12 @@
+.repo__list {
+    &-item {
+        margin: 1em 0;
+        .repo-title {
+            text-transform: capitalize;
+        }
+        a {
+            white-space: pre-wrap;
+            word-wrap: break-word;            
+        }        
+    }
+}

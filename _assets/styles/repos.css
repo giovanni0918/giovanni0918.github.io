@@ -1,0 +1,7 @@
+.repo__list-item {
+  margin: 1em 0; }
+  .repo__list-item .repo-title {
+    text-transform: capitalize; }
+  .repo__list-item a {
+    white-space: pre-wrap;
+    word-wrap: break-word; }

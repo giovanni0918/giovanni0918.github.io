@@ -1,0 +1,62 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2a7ae2">
+  <title>{{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:image" content="{{ site.url }}/dist/images/avatar__img.jpg">
+  <meta property="og:publisher" content="https://www.facebook.com/giovanni0918">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@giovanni0918">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}/dist/images/avatar__img.jpg">
+
+  <link rel="stylesheet" href="{{ site.url }}/dist/styles/styles.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Giovanni Orlando | Web">
+    <link rel="icon" sizes="192x192" href="{{ site.url }}/dist/images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Giovanni Orlando | Web">
+    <link rel="apple-touch-icon" href="{{ site.url }}/dist/images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="{{ site.url }}/dist/images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3F51B5">
+
+    <title>Giovanni Orlando | Web</title>
+    <link rel="icon" href="{{ site.url }}/dist/images/favicon.ico">
+    <link rel="canonical" href="https://giovanni-orlando.com/">
+    <link rel="manifest" href="{{ site.url }}/manifest.json">
+
+
+
+  <script async src="{{ site.url }}/dist/scripts/app.js"></script>
+  <script defer src="{{ site.url }}/dist/scripts/blog.js"></script>
+  <!-- Enforce ssl -->
+  <script>
+    const host='giovanni-orlando.com';if((host===window.location.host||`www.${host}`===window.location.host)&&(window.location.protocol!=='https:')){window.location.protocol='https:'}
+  </script>
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+</head>
