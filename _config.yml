@@ -22,6 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://giovanni-orlando.com
 enforce_ssl: giovanni-orlando.com
 repository: giovanni0918/giovanni0918.github.io
+google_analytics: UA-82693415-1 
 profiles:
  - account: facebook
    username: giovanni0918
