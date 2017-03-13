@@ -8,7 +8,7 @@ const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
 
 gulp.task('imagemin', (done) =>
-    gulp.src('./images/**')
+    gulp.src('./_assets/images/**')
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images'))
 );

@@ -1,1 +1,1 @@
-"use strict";!function(n,t,c){}(window,document);
+"use strict";window,document;
