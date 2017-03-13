@@ -122,11 +122,11 @@ div.container {
 .section.section--skills h1,
 .section.section--repos h1 {
   margin: 0.75em 0;
-  color: #2a7ae2;
+  color: #0655BC;
   font-size: 1rem;
   font-weight: 700;
   padding-left: 0.75em;
-  border-left: 0.25em solid #2a7ae2; }
+  border-left: 0.25em solid #0655BC; }
   @media only screen and (min-width: 425px) {
     .section.section--about-me h1,
     .section.section--education h1,
@@ -166,7 +166,7 @@ div.container {
 .section.section--experience a,
 .section.section--skills a,
 .section.section--repos a {
-  color: #2a7ae2; }
+  color: #0655BC; }
 
 .post-content a:link, .post-content a:visited {
   text-align: left;

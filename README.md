@@ -8,20 +8,20 @@ Built using Jekyll
 
 # Usage
 
-1. Clone the repo
+Clone the repo  
 - `$ git clone https://github.com/giovanni0918/giovanni0918.github.io.git`
 
-2. Navigate into project dir
+Navigate into project dir  
 - `$ cd ~/Downloads/giovanni0918.github.io`
 
-3. Install jekyll (assumes ruby is installed)
+Install jekyll (assumes ruby is installed)  
 - `$ gem install jekyll`
 
-4. Install dependencies (assumes jekyll and node are installed)
+Install dependencies (assumes jekyll and node are installed)  
 - `$ bundle install` 
 - `$ npm install` 
 
-5. Serve locally
+Serve locally  
 - `npm start` 
 
 # LICENSE
