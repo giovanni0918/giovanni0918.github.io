@@ -1,3 +1,8 @@
+:root {
+  --base-color-plus-5: #1D6DD5;
+  --base-color-plus-10: #1161C9;
+  --base-color-plus-15: #0655BC; }
+
 .flex-vertically {
   display: flex;
   flex-direction: column;
@@ -16,7 +21,7 @@
   padding: 0;
   border: none;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-  background-color: #2a7ae2;
+  background-color: var(--base-color-plus-5);
   color: white;
   font-weight: 700;
   line-height: 3em;
@@ -42,7 +47,7 @@
     width: 100%;
     min-height: 56px;
     text-align: center;
-    background-color: #2a7ae2;
+    background-color: var(--base-color-plus-5);
     color: white; }
 
 .header__nav {
