@@ -1,11 +1,8 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: page
-title: Index
-permalink: /
-group: "navigation"
+layout: page  
+title: Index  
+permalink: /  
+group: "navigation"  
 ---
 <style>
 @media only screen and (max-width: 375px) {
@@ -106,6 +103,8 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
         - MySQL
         - Microsoft SQL Server
     9. C++
+    10. C#
+        - ASP.NET (MVC)
 
 </section>
 

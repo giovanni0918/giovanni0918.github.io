@@ -17,35 +17,37 @@
   <meta name="twitter:site" content="@giovanni0918">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="twitter:image" content="{{ site.url }}/dist/images/avatar__img.jpg">
-
+  <meta name="twitter:image" content="{{ site.url }}/dist/images/avatar__img.jpg">  
+  
+  <!-- BingSiteAuth.xml -->
+  <meta name="msvalidate.01" content="0C5479F87DF7C3A5C228C24A3D5ACFF8" />
   <link rel="stylesheet" href="{{ site.url }}/dist/styles/styles.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  
+  
+  
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
 
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="{{ site.title | escape }}">
+  <link rel="icon" sizes="192x192" href="{{ site.url }}/dist/images/touch/chrome-touch-icon-192x192.png">
 
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="{{ site.title | escape }}">
+  <link rel="apple-touch-icon" href="{{ site.url }}/dist/images/touch/apple-touch-icon.png">
 
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="{{ site.url }}/dist/images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#2a7ae2">
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="{{ site.title | escape }}">
-    <link rel="icon" sizes="192x192" href="{{ site.url }}/dist/images/touch/chrome-touch-icon-192x192.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="{{ site.title | escape }}">
-    <link rel="apple-touch-icon" href="{{ site.url }}/dist/images/touch/apple-touch-icon.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="{{ site.url }}/dist/images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#2a7ae2">
-
-    <link rel="icon" href="{{ site.url }}/dist/images/favicon.ico">
-    <link rel="canonical" href="https://giovanni-orlando.com/">
-    <link rel="manifest" href="{{ site.url }}/manifest.json">
+  <!-- Favicon and Web App Manifest -->
+  <link rel="icon" href="{{ site.url }}/dist/images/favicon.ico">
+  <link rel="manifest" href="{{ site.url }}/manifest.json">
 
 
 

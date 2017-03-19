@@ -7,7 +7,7 @@ const cssMin = require('gulp-css');
 const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
 
-gulp.task('imagemin', (done) =>
+gulp.task('imagemin', (done) => 
     gulp.src('./_assets/images/**')
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images'))
