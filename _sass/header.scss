@@ -29,6 +29,7 @@
     font-weight: 700;
     line-height: 3em;
     text-align: center;
+    z-index: 3;
     
     &__link {
         padding: 0.5rem;
@@ -67,6 +68,7 @@
     position: sticky;
     -webkit-position: sticky;
     top: 0;    
+    z-index: 3;
 
     .nav__link {
         flex: 1;

@@ -20,7 +20,10 @@ gulp.task('sass', () =>
 );
 
 gulp.task('styles', function (done) {
-    gulp.src('./_assets/styles/**/*.css')
+    gulp.src([
+        './_assets/styles/**/*.css',
+        './_sass/prism.css'
+    ])
         .pipe(concat('styles.css'))
         .pipe(cssMin())
         .pipe(gulp.dest('./dist/styles'));
@@ -34,7 +37,7 @@ gulp.task('scripts', function (done) {
         './_scripts/bootstrap.min.js',
         './_scripts/angular.js',
         './_scripts/angular-cookies.js',
-        './node_modules/sw-toolbox/sw-toolbox.js'
+        './node_modules/sw-toolbox/sw-toolbox.js',        
 
     ]).pipe(concat('libs.js'))
         .pipe(uglify())
@@ -45,7 +48,8 @@ gulp.task('scripts', function (done) {
         './_scripts/app.js',
         './_scripts/blog.js',
         './_scripts/contact.js',
-        './_scripts/repos.js'
+        './_scripts/repos.js',
+        './_scripts/prism.js'
 
     ]).pipe(babel({
         presets: ['es2015']

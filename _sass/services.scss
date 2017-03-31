@@ -1,0 +1,233 @@
+/*==============================
+  Layout
+==============================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-vertically {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-horizontally {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    &.services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (min-width: 992px) {
+            flex-direction: row;
+        }
+
+       .service {
+            flex: 1;
+            width: inherit;
+            min-height: 100vh;
+
+            &:nth-of-type(even) {
+                background-color: #D2FF96;
+            }
+            &:nth-of-type(odd) {
+                background-color: #00A6FB;
+            }
+            h1 {
+                text-transform: capitalize;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 0;
+                color: black;
+            }
+            /*==============================
+            Content Creation
+            ==============================*/
+            .paper {
+                width: 135px;
+                height: 180px;
+                border: 1px solid black;
+                background-color: white;
+                transform: rotate( -5deg );
+            }
+
+            .paper__copy {
+                margin: 0.5rem;
+            }
+
+            p {
+                opacity: 0;
+                font-size: .425rem;
+                text-align: justify;
+
+                &:first-of-type {
+                    will-change: transform;
+                    transition: 0.2s transform ease-in-out;
+                    animation: fade-in-out 2s 1s infinite;
+                }
+
+                &:last-of-type {
+                    will-change: transform;
+                    transition: 0.2s transform ease-in-out;
+                    animation: fade-in 2s 2s infinite;
+                }
+            }
+
+            .pencil {
+                will-change: transform;
+                transition: 0.2s transform ease-in-out;
+                animation: tilt 2s infinite;
+
+                &__tip {
+                    border-right: 20px solid antiquewhite;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    &__lead {
+                        border-right: 8px solid black;
+                        border-top: 4px solid transparent;
+                        border-bottom: 4px solid transparent;
+                    }
+                }
+                
+                &__core {
+                    width: 4rem;
+                    height: 28px;
+                    border-left: 1px solid black;
+                    background-color: yellow;                    
+                }
+
+                &__top {
+                    width: 20px;
+                    height: 27px;
+                    border: 1px solid black;
+                    background-color: #EF476F;
+                    
+                }
+            }
+            @keyframes fade-in {
+                0% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes fade-in-out {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            /*==============================
+            Design
+            ==============================*/
+            .square {
+                width: 9rem;
+                height: 9rem;
+                background: hotpink;
+                z-index: 0;
+                will-change: transform;
+                transition: 0.2s transform ease-in-out;
+                animation: spinner 4s infinite;
+            }
+
+            .circle {
+                width: 8rem;
+                height: 8rem;
+                border-radius: 4.5rem;
+                background: #FFD972;
+                will-change: transform;
+                transition: 0.2s transform ease-in-out;
+                animation: paint 5s infinite;
+                position: relative;
+                left: 3.875rem;
+                bottom: 7rem;
+                z-index: 1;
+            }
+
+            .triangle {
+                width: 0;
+                height: 0;
+                border-bottom: 7rem solid #8B80F9;
+                border-left: 4rem solid transparent;
+                border-right: 4rem solid transparent;
+                will-change: transform;
+                transition: 0.2s transform ease-in-out;
+                animation: spinner 2s infinite;
+                position: relative;
+                top: 12rem;
+                z-index: 2;
+            }
+            @keyframes tilt {
+                0% {
+                    transform: rotate(0deg);
+                }
+                50% {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            @keyframes spinner {
+                to {
+                    transform: rotate(0deg);
+                }
+                from {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes paint {
+                0% {
+                    background: #FFD972;
+                }
+                50% {
+                    background: #00B2CA;
+                }
+            }
+            
+
+            /*==============================
+            Tutoring and Development
+            ==============================*/
+
+            .blackboard {
+                color: white;
+                font-family: Courier New, Courier, monospace;
+                font-size: 0.75rem;
+                font-weight: 700;
+            }
+
+            .blackboard pre {
+                height: 40vh;
+            }
+        } 
+    }
+}

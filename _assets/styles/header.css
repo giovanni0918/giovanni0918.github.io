@@ -25,7 +25,8 @@
   color: white;
   font-weight: 700;
   line-height: 3em;
-  text-align: center; }
+  text-align: center;
+  z-index: 3; }
   .header__link {
     padding: 0.5rem;
     font-size: 1.125rem;
@@ -53,7 +54,8 @@
 .header__nav {
   position: sticky;
   -webkit-position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 3; }
   .header__nav .nav__link {
     flex: 1;
     color: white;

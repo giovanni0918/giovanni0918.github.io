@@ -168,6 +168,9 @@ div.container {
 .section.section--repos a {
   color: #0655BC; }
 
+.post-header .post-title {
+  font-size: 2rem; }
+
 .post-content a:link, .post-content a:visited {
   text-align: left;
   font-size: 1.1em;
