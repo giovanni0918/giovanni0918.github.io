@@ -40,14 +40,19 @@ group: "navigation"
     
     .service h1 {
         width: 100%;
-        height: 260px;
+        height: 240px;
         margin: 0;
         padding: 0;
-        line-height: 260px;
+        line-height: 240px;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 2rem;
+        font-size: 1.75rem;
         font-weight: 700;
         text-align: center;  
+    }
+    @media only screen and (min-width: 768px) {
+        .service h1 {
+            font-size: 2rem;
+        }
     }
 </style>
 <script async src="{{ site.url }}/dist/scripts/prism.js"></script>
