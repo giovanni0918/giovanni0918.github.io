@@ -58,6 +58,9 @@ html, body {
             &:nth-of-type(odd) {
                 background-color: #00A6FB;
             }
+            &:last-of-type {
+                background-color: lightgoldenrodyellow;
+            }
             h1 {
                 text-transform: capitalize;
                 font-family: Arial, Helvetica, sans-serif;
@@ -183,7 +186,7 @@ html, body {
                 transition: 0.2s transform ease-in-out;
                 animation: spinner 2s infinite;
                 position: relative;
-                top: 12rem;
+                bottom: 12rem;
                 z-index: 2;
             }
             @keyframes tilt {

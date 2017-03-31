@@ -1,7 +1,7 @@
---- 
+---
 layout: page  
 title: Services  
-permalink: /pages/services  
+permalink: /pages/services/  
 group: "navigation"  
 ---
 <style>
@@ -29,10 +29,26 @@ group: "navigation"
     .page-content {
         padding: 0;
     }
+    
     footer div.container {
         min-height: 100vh;
     }
     
+    .services .flex-vertically {
+        justify-content: flex-start;
+    }
+    
+    .service h1 {
+        width: 100%;
+        height: 260px;
+        margin: 0;
+        padding: 0;
+        line-height: 260px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;  
+    }
 </style>
 <script async src="{{ site.url }}/dist/scripts/prism.js"></script>
 <div class="container services">
@@ -42,12 +58,14 @@ group: "navigation"
         <div class="flex-horizontally">
             <div class="paper">
                 <div class="paper__copy">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
                         <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit eau de voluptatem accusantium doloremque no du laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                        Foo em.</p>
+                        consequat.
+                    </p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit eau de voluptatem accusantium doloremque no du laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt explicabo. Foo em.</p>
                 </div>
             </div>
             <div class="pencil flex-horizontally">
@@ -61,11 +79,11 @@ group: "navigation"
     </section>
 
     <section class="service flex-vertically">
-        <h1 style="position: relative; top: 6.375rem;">design</h1>
+        <h1>web design</h1>
         <div class="container flex-vertically">
-            <div class="triangle"></div>
             <div class="square"></div>
             <div class="circle"></div>
+            <div class="triangle"></div>
         </div>
     </section>
 
