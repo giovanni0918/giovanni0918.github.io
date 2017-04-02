@@ -1,6 +1,3 @@
-/*==============================
-  Layout
-==============================*/
 * {
   box-sizing: border-box; }
 
@@ -10,8 +7,9 @@ html, body {
   margin: 0;
   padding: 0;
   border: none;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-weight: 500; }
 
 .flex-vertically {
   display: flex;
@@ -25,86 +23,71 @@ html, body {
   align-items: center;
   justify-content: center; }
 
-.container {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border: none; }
-  .container.services {
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (min-width: 992px) {
+    .services {
+      flex-direction: row; } }
+  .services .service {
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
-    @media only screen and (min-width: 992px) {
-      .container.services {
-        flex-direction: row; } }
-    .container.services .service {
-      flex: 1;
-      width: inherit;
-      min-height: 100vh;
-      /*==============================
-            Content Creation
-            ==============================*/
-      /*==============================
-            Design
-            ==============================*/
-      /*==============================
-            Tutoring and Development
-            ==============================*/ }
-      .container.services .service:nth-of-type(even) {
-        background-color: #D2FF96; }
-      .container.services .service:nth-of-type(odd) {
-        background-color: #00A6FB; }
-      .container.services .service:last-of-type {
-        background-color: lightgoldenrodyellow; }
-      .container.services .service h1 {
-        text-transform: capitalize;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 0;
-        color: black; }
-      .container.services .service .paper {
-        width: 135px;
-        height: 180px;
-        border: 1px solid black;
-        background-color: white;
-        transform: rotate(-5deg); }
-      .container.services .service .paper__copy {
-        margin: 0.5rem; }
-      .container.services .service p {
-        opacity: 0;
-        font-size: .425rem;
-        text-align: justify; }
-        .container.services .service p:first-of-type {
-          will-change: transform;
-          transition: 0.2s transform ease-in-out;
-          animation: fade-in-out 2s 1s infinite; }
-        .container.services .service p:last-of-type {
-          will-change: transform;
-          transition: 0.2s transform ease-in-out;
-          animation: fade-in 2s 2s infinite; }
-      .container.services .service .pencil {
+    justify-content: flex-start; }
+    .services .service h2 {
+      height: 220px;
+      line-height: 220px;
+      margin: 0;
+      padding: 0;
+      text-align: center; }
+  .services #content-creation {
+    background-color: #00A6FB; }
+    .services #content-creation .paper {
+      width: 135px;
+      height: 180px;
+      border: 1px solid black;
+      background-color: white;
+      transform: rotate(-5deg); }
+    .services #content-creation .paper__copy {
+      margin: 0.5rem; }
+    .services #content-creation p {
+      opacity: 0;
+      font-size: .55rem; }
+      .services #content-creation p:first-of-type {
         will-change: transform;
         transition: 0.2s transform ease-in-out;
-        animation: tilt 2s infinite; }
-        .container.services .service .pencil__tip {
-          border-right: 20px solid antiquewhite;
-          border-top: 10px solid transparent;
-          border-bottom: 10px solid transparent; }
-          .container.services .service .pencil__tip__lead {
-            border-right: 8px solid black;
-            border-top: 4px solid transparent;
-            border-bottom: 4px solid transparent; }
-        .container.services .service .pencil__core {
-          width: 4rem;
-          height: 28px;
-          border-left: 1px solid black;
-          background-color: yellow; }
-        .container.services .service .pencil__top {
-          width: 20px;
-          height: 27px;
-          border: 1px solid black;
-          background-color: #EF476F; }
+        animation: fade-in-out 2s 1s infinite; }
+      .services #content-creation p:last-of-type {
+        will-change: transform;
+        transition: 0.2s transform ease-in-out;
+        animation: fade-in 2s 2s infinite; }
+    .services #content-creation .pencil {
+      will-change: transform;
+      transition: 0.2s transform ease-in-out;
+      animation: tilt 2s infinite; }
+      .services #content-creation .pencil__tip {
+        border-right: 20px solid antiquewhite;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent; }
+        .services #content-creation .pencil__tip-lead {
+          border-right: 8px solid black;
+          border-top: 4px solid transparent;
+          border-bottom: 4px solid transparent; }
+      .services #content-creation .pencil__core {
+        width: 4rem;
+        height: 28px;
+        border-left: 1px solid black;
+        background-color: yellow; }
+      .services #content-creation .pencil__top {
+        width: 20px;
+        height: 27px;
+        border: 1px solid black;
+        background-color: #EF476F; }
 
 @keyframes fade-in {
   0% {
@@ -117,38 +100,44 @@ html, body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-      .container.services .service .square {
-        width: 9rem;
-        height: 9rem;
-        background: hotpink;
-        z-index: 0;
-        will-change: transform;
-        transition: 0.2s transform ease-in-out;
-        animation: spinner 4s infinite; }
-      .container.services .service .circle {
-        width: 8rem;
-        height: 8rem;
-        border-radius: 4.5rem;
-        background: #FFD972;
-        will-change: transform;
-        transition: 0.2s transform ease-in-out;
-        animation: paint 5s infinite;
-        position: relative;
-        left: 3.875rem;
-        bottom: 7rem;
-        z-index: 1; }
-      .container.services .service .triangle {
-        width: 0;
-        height: 0;
-        border-bottom: 7rem solid #8B80F9;
-        border-left: 4rem solid transparent;
-        border-right: 4rem solid transparent;
-        will-change: transform;
-        transition: 0.2s transform ease-in-out;
-        animation: spinner 2s infinite;
-        position: relative;
-        bottom: 12rem;
-        z-index: 2; }
+  .services #design {
+    background-color: #D2FF96; }
+    .services #design ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    .services #design #square {
+      width: 9rem;
+      height: 9rem;
+      background: hotpink;
+      z-index: 0;
+      will-change: transform;
+      transition: 0.2s transform ease-in-out;
+      animation: spinner 4s infinite; }
+    .services #design #circle {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 4.5rem;
+      background: #FFD972;
+      will-change: transform;
+      transition: 0.2s transform ease-in-out;
+      animation: paint 5s infinite;
+      position: relative;
+      left: 3.875rem;
+      bottom: 7rem;
+      z-index: 1; }
+    .services #design #triangle {
+      width: 0;
+      height: 0;
+      border-bottom: 7rem solid #8B80F9;
+      border-left: 4rem solid transparent;
+      border-right: 4rem solid transparent;
+      will-change: transform;
+      transition: 0.2s transform ease-in-out;
+      animation: spinner 2s infinite;
+      position: relative;
+      bottom: 12rem;
+      z-index: 2; }
 
 @keyframes tilt {
   0% {
@@ -167,10 +156,7 @@ html, body {
     background: #FFD972; }
   50% {
     background: #00B2CA; } }
-      .container.services .service .blackboard {
-        color: white;
-        font-family: Courier New, Courier, monospace;
-        font-size: 0.75rem;
-        font-weight: 700; }
-      .container.services .service .blackboard pre {
-        height: 40vh; }
+  .services #tutoring-and-development {
+    background-color: lightgoldenrodyellow; }
+    .services #tutoring-and-development pre {
+      height: 40vh; }

@@ -18,7 +18,7 @@
     "gulp-uglify": "^2.0.1"
   },
   "scripts": {
-    "start": "gulp && npm run dev",
+    "start": "gulp sass && gulp styles && npm run dev",
     "dev": "bundle exec jekyll serve",
     "build": "gulp && JEKYLL_ENV=production bundle exec jekyll build",
     "windows-build": "gulp && set \"JEKYLL_ENV=production\" && bundle exec jekyll build",
