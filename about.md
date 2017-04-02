@@ -1,7 +1,7 @@
 ---
-layout: page
-title: About
-permalink: /pages/about/
+layout: page  
+title: About  
+permalink: /pages/about/  
 ---
 
 <section class="section section--about-me" markdown="1">

@@ -1,7 +1,7 @@
 ---
-layout: page
-title: bible
-permalink: /pages/bible-docs/
+layout: page  
+title: bible  
+permalink: /pages/bible-docs/  
 ---
 <style>.header .nav {display:none;} .bible-wrapper{padding: 1em 0;}</style>
 <div id="bible-docs" style="margin: 1em; text-align: justify;">

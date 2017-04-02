@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Contact
-permalink: /pages/contact/
-group: "navigation"
+layout: page  
+title: Contact  
+permalink: /pages/contact/  
+group: "navigation"  
+excerpt: Contact page for https://giovanni-orlando.com • Built by Giovanni Orlando, Powered by Jekyll. Computer Engineer • Food Lover • Tech Enthusiast • @giovanni0918  
 ---
 <style>
     .page-content, .post-content{margin: 0; padding: 0;}

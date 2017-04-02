@@ -3,6 +3,7 @@ layout: page
 title: Services  
 permalink: /pages/services/  
 group: "navigation"  
+excerpt: Services page for https://giovanni-orlando.com • Built by Giovanni Orlando, Powered by Jekyll. Computer Engineer • Food Lover • Tech Enthusiast • @giovanni0918  
 ---
 <style>
     html,
