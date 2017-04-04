@@ -46,21 +46,21 @@ div.container{
         }
     }
     &.food-lover{
-        background-image: url('/images/food-lover.svg');
+        background-image: url('/dist/images/food-lover.svg');
         background-color: #25D197;
         /*background-size: cover;*/
         background-repeat: no-repeat;
         background-position: top right;
     }
     &.tech-enthusiast{
-        background-image: url('/images/tech-enthusiast.svg');
+        background-image: url('/dist/images/tech-enthusiast.svg');
         /*background-size: cover;*/
         background-color:#1985A1;
         background-repeat: no-repeat;
         background-position: top right;
     }
     &.container.web-developer{
-        background-image: url('/images/web-developer.svg');
+        background-image: url('/dist/images/web-developer.svg');
         background-color:#8D5A97;
         /*background-size: cover;*/
         background-repeat: no-repeat;
@@ -68,7 +68,7 @@ div.container{
     }
     
     &.social {
-        background-image: url('/images/web-developer.svg');
+        background-image: url('/dist/images/web-developer.svg');
         /*background-size: cover;*/
         background-repeat: no-repeat;
         background-position: top left;
