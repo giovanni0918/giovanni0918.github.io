@@ -20,8 +20,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-  background-color: var(--base-color-plus-5);
+  background-color: #1D6DD5;
   color: white;
   font-weight: 700;
   line-height: 3em;
@@ -48,8 +47,9 @@
     width: 100%;
     min-height: 56px;
     text-align: center;
-    background-color: var(--base-color-plus-5);
-    color: white; }
+    background-color: #1D6DD5;
+    color: white;
+    box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.3); }
 
 .header__nav {
   position: sticky;
