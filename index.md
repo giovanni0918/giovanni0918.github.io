@@ -69,7 +69,7 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
 - [Vyrtuo Corporation]()  
     Full stack web developer (2015 - present)
 
-- [Modernica Group Corporation](www.modernicaonline.com)  
+- [Modernica Group Corporation](https://www.facebook.com/modernicaonline)  
     Apple Certified iOS Technician (2014 - present)
 
 </section>
