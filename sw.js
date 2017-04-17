@@ -3,37 +3,31 @@ toolbox.options.debug = false;
 
 toolbox.precache([
     '/',
-    '/dist/styles/styles.css',
-    '/dist/images/avatar__img.jpg',
-    '/dist/images/gmail__icon.svg',
-    '/dist/images/phone__icon.svg',
-    '/dist/images/Octocat.png',
-    '/dist/images/instagram__icon.png',
-    '/dist/images/facebook__icon.svg',
-    '/dist/images/twitter__icon.svg',
-    '/dist/images/googleplus__icon.svg',
-    '/dist/images/youtube__icon.png',
-    '/dist/scripts/app.js',
-    '/dist/scripts/blog.js',
-    '/dist/scripts/repos.js', 
     '/pages/blog/',
     '/pages/contact/',
-    '/pages/twitter/'
+    '/pages/services/',
+    '/pages/twitter/',
+    '/dist/app.bundle.js',
+    '/dist/style.bundle.js',
+    '/dist/images/avatar__img.jpg',
+    '/dist/images/food-lover.svg',
+    '/dist/images/tech-enthusiast.svg',
+    '/dist/images/web-developer.svg'
 ]);
+
+// Pages
 toolbox.router.get('/', toolbox.fastest);
-toolbox.router.get('/dist/styles/styles.css', toolbox.fastest);
-toolbox.router.get('/dist/images/avatar__img.jpg', toolbox.fastest);
-toolbox.router.get('/dist/images/gmail__icon.svg', toolbox.fastest);
-toolbox.router.get('/dist/images/phone__icon.svg', toolbox.fastest);
-toolbox.router.get('/dist/images/Octocat.png', toolbox.fastest);
-toolbox.router.get('/dist/images/instagram__icon.png', toolbox.fastest);
-toolbox.router.get('/dist/images/facebook__icon.svg', toolbox.fastest);
-toolbox.router.get('/dist/images/twitter__icon.svg', toolbox.fastest);
-toolbox.router.get('/dist/images/googleplus__icon.svg', toolbox.fastest);
-toolbox.router.get('/dist/images/youtube__icon.png', toolbox.fastest);
-toolbox.router.get('/dist/scripts/app.js', toolbox.fastest);
-toolbox.router.get('/dist/scripts/blog.js', toolbox.fastest);
-toolbox.router.get('/dist/scripts/repos.js', toolbox.fastest);
 toolbox.router.get('/pages/blog/', toolbox.fastest);
 toolbox.router.get('/pages/contact/', toolbox.fastest);
+toolbox.router.get('/pages/services/', toolbox.fastest);
 toolbox.router.get('/pages/twitter/', toolbox.fastest);
+
+// Scripts and Styles
+toolbox.router.get('/dist/app.bundle.js', toolbox.fastest);
+toolbox.router.get('/dist/style.bundle.js', toolbox.fastest);
+
+// Images
+toolbox.router.get('/dist/images/avatar__img.jpg', toolbox.fastest);
+toolbox.router.get('/dist/images/food-lover.svg', toolbox.fastest);
+toolbox.router.get('/dist/images/tech-enthusiast.svg', toolbox.fastest);
+toolbox.router.get('/dist/images/web-developer.svg', toolbox.fastest);

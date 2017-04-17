@@ -6,4 +6,5 @@ layout: home
 title: Home
 permalink: /home/
 group: "navigation"
+excerpt: Posts page for https://giovanni-orlando.com • Built by Giovanni Orlando, Powered by Jekyll. Computer Engineer • Food Lover • Tech Enthusiast • @giovanni0918  
 ---

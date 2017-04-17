@@ -22,6 +22,10 @@ app.get(['/contact', '/pages/contact'], (request, response) => {
     response.sendFile(path.join(__dirname, '_site', '/pages/contact/index.html'));
 });
 
+app.get(['/services', '/pages/services'], (request, response) => {
+    response.sendFile(path.join(__dirname, '_site', '/pages/services/index.html'));
+});
+
 app.listen(app.get('port'), () => {
     console.log('Node app is running on port', app.get('port'));
 });

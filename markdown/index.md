@@ -9,7 +9,6 @@ group: "navigation"
     .page-content { margin: 0; padding: 0;}
 }
 </style>
-<script defer src="{{ site.url }}/dist/scripts/repos.js"></script>
 <section class="section section--about-me" markdown="1">
 
 # About me

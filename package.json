@@ -1,28 +1,37 @@
 {
   "name": "giovanni0918.github.io",
   "version": "1.0.0",
-  "description": "Source code for Giovanni Orlando http://giovanni-orlando.com",
+  "description": "Source code for Giovanni Orlando https://giovanni-orlando.com",
   "main": "index.js",
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "express": "^4.14.1",
+    "firebase": "^3.7.8",
     "sw-toolbox": "^3.5.1"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.22.0",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-babel": "^6.1.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-css": "^0.1.0",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.0.1"
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-regenerator": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "css-loader": "^0.28.0",
+    "file-loader": "^0.11.1",
+    "html-loader": "^0.4.5",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1"
   },
   "scripts": {
-    "start": "gulp sass && gulp styles && npm run dev",
-    "dev": "bundle exec jekyll serve",
-    "build": "gulp && JEKYLL_ENV=production bundle exec jekyll build",
-    "windows-build": "gulp && set \"JEKYLL_ENV=production\" && bundle exec jekyll build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack && npm run copy && npm run serve",
+    "build": "webpack -p && npm run copy && JEKYLL_ENV=production bundle exec jekyll build",
+    "copy": "cp -r _assets/images/ dist/ && cp -r node_modules/sw-toolbox/sw-toolbox.js dist/",
+    "serve": "bundle exec jekyll serve",
+    "windows-build": "webpack -p && npm run copy && set \"JEKYLL_ENV=production\" && bundle exec jekyll build"
   },
   "repository": {
     "type": "git",
@@ -31,7 +40,7 @@
   "keywords": [
     "web-dev",
     "frontend",
-    "angular",
+    "webpack",
     "jekyll",
     "reactjs",
     "backend",

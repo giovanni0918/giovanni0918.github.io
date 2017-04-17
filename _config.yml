@@ -64,3 +64,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - app.entry.js
+  - style.entry.js
+  - gulpfile.js

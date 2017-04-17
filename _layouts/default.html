@@ -14,7 +14,9 @@
     </main>
 
     {% include footer.html %}
-    
+
+    <script src="{{ site.url }}/dist/app.bundle.js"></script>
+
     {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include service-worker.html %}
     {% endif %}
