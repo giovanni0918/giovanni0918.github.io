@@ -2,7 +2,7 @@
 layout: post  
 title:  "omdb-search Polymer Element: Find Movie, Series, and Episode data"  
 date:   2017-04-09 16:08:00 -0400  
-categories: pages blog 
+categories: pages blog
 ---
 
 # What is omdb-search
@@ -90,7 +90,7 @@ In that index.html add the following code:
 
 This element depends on [iron-ajax](https://www.webcomponents.org/element/PolymerElements/iron-ajax) Polymer element, which exposes network request functionality to the user, and makes dealing with REST APIs a smooth experience. iron-ajax is licensed under [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause).
 
-## Available on [webcomponents.org](webcomponents.org)
+## Available on [webcomponents.org](https://www.webcomponents.org/)
 
 ## Future goals
 
@@ -106,7 +106,7 @@ I am currently developing a node web application that is built on top of this el
 
 ## Repo
 
-If you are interested in learning more about this element, make sure you checkout the [GitHub](https://github.com/giovanni0918/omdb-search) repository. 
+If you are interested in learning more about this element, make sure you checkout the [GitHub](https://github.com/giovanni0918/omdb-search) repository.
 
 ## Outro
 
