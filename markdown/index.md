@@ -36,6 +36,22 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
 </section>
 
 
+<section class="section section--experience" markdown="1">
+
+# Experience
+
+- [IT Developers Group](http://www.itdgpr.com/)  
+    Software developer (from 2017 to present)
+
+- [Vyrtuo Corporation]()  
+    Full stack web developer (from 2015 to present)
+
+- [Modernica Group Corporation](https://www.facebook.com/modernicaonline)  
+    Apple Certified iOS Technician (from 2014 to 2017)
+
+</section>
+
+
 <section class="section section--certifications" markdown="1">
 
 # Certifications
@@ -58,21 +74,6 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
     Identify the iOS devices that have Apple-specific features and components. Provide an overview of the steps in the device setup and activation process. 
     
     Recognize and respond to SIM Card Alerts during the activation process. Describe the benefits of iTunes and iCloud backups.
-
-</section>
-
-<section class="section section--experience" markdown="1">
-
-# Experience
-
-- [IT Developers Group](http://www.itdgpr.com/)  
-    Software developer (2017 - present)
-
-- [Vyrtuo Corporation]()  
-    Full stack web developer (2015 - present)
-
-- [Modernica Group Corporation](https://www.facebook.com/modernicaonline)  
-    Apple Certified iOS Technician (2014 - 2017)
 
 </section>
 
