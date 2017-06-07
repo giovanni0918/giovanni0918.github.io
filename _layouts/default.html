@@ -8,6 +8,17 @@
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
+      <style>
+        .wrapper {
+          max-width: 992px;
+        }
+        @media only screen and (min-width: 1024px) {
+          .blog {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+          }
+        }
+      </style>
       <div class="wrapper">
         {{ content }}
       </div>
