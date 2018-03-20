@@ -26,7 +26,8 @@
 
     {% include footer.html %}
 
-    <script src="{{ site.url }}/dist/app.bundle.js"></script>
+    <script defer src="{{ site.url }}/dist/vendors.bundle.js"></script>
+    <script defer src="{{ site.url }}/dist/app.bundle.js"></script>
 
     {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include service-worker.html %}

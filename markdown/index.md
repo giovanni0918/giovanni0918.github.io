@@ -12,11 +12,11 @@ group: "navigation"
 <section class="section section--about-me" markdown="1">
 
 # About me
-I'm 23 years old; completed my Bachelor's Degree in Computer Engineering. 
+I'm 24 years old; completed my Bachelor's Degree in Computer Engineering. 
 
 I'm a whole hearted food lover: fan of burgers, pizza, salad, steak, and tacos. 
 
-I'm considered by many a tech enthusiast, I find myself Beta testing all the things: Google Chrome Canary, Android 7.1 Nougat, WebKit. 
+I'm considered, by many, a tech enthusiast. I find myself Beta testing all the things: Google Chrome Canary, Android Oreo, WebKit. 
 
 I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS), and believes it's up to us to help Make the Web great, again. 
 
@@ -56,12 +56,12 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
 
 # Certifications
 
-- [ACIT 2016 iOS Service Certification Exam (iOS-16A)](https://support.apple.com/en-us/HT205735)  
+- [ACIT 2017 iOS Service Certification Exam (iOS-17A)](https://support.apple.com/en-us/HT207708)  
     Use the correct engaging questions to better troubleshoot a customer issue. Demonstrate deductive reasoning through logical question progression. Correctly use evaluative questions to isolate customer issues to educational, environmental, software, or hardware opportunities. 
     
     Describe the privacy settings that can be put in place for apps. Use Apple documentation, approved tools, and appropriate service strategies to safely repair iOS Products.
 
-- [Apple Service Fundamentals Exam (SVC-16A)](https://support.apple.com/en-us/HT205737)  
+- [Apple Service Fundamentals Exam (SVC-17A)](https://support.apple.com/en-us/HT207707)  
     Identify and practice ESD precautions. Identify the components of an ESD-compliant workstation. Use the proper tools, equipment, and procedures to set up a workspace that minimizes or eliminates electrostatic discharge damage. Identify the customer statements that generate a Safety First case. 
     
     Demonstrate the proper and safe handling of batteries and portable computer case assemblies with a built-in battery. Find and use any Apple product's serial number to determine its level of coverage. 
@@ -90,24 +90,24 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
         - Materialize    
     4. JavaScript (ES2015, ES2016)
         - jQuery
-        - Angular (1.x, 2.0)
-        - ReactJS
-        - Polymer (1.x)
+        - TypeScript
+        - React
+        - Angular (1.x, 5.0)        
         - Node.js
-    5. PHP
-        - Laravel (5.x)
-        - WordPress
-    6. Ruby
-        - Rails
-        - Jekyll
-    7. Python
-        - Flask
-    8. SQL
+    5. C#
+        - ASP.NET (MVC)
+    6. SQL
         - MySQL
         - Microsoft SQL Server
-    9. C++
-    10. C#
-        - ASP.NET (MVC)
+    7. PHP
+        - Laravel (5.x)
+        - WordPress
+    8. Ruby
+        - Rails
+        - Jekyll
+    9. Python
+        - Flask
+    10. C++
 
 </section>
 

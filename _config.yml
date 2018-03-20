@@ -56,7 +56,7 @@ github: [metadata]
 # Build settings
 markdown: kramdown
 # theme: minima
-gems:
+plugins:
   - jekyll-feed
   - jekyll-timeago
   - jekyll-sitemap
