@@ -24,7 +24,7 @@ toolbox.router.get('/pages/twitter/', toolbox.fastest);
 
 // Scripts and Styles
 toolbox.router.get('/dist/app.bundle.js', toolbox.fastest);
-toolbox.router.get('/dist/style.bundle.js', toolbox.fastest);
+toolbox.router.get('/dist/style.bundle.css', toolbox.fastest);
 
 // Images
 toolbox.router.get('/dist/images/avatar__img.jpg', toolbox.fastest);
