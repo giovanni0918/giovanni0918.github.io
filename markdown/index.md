@@ -12,11 +12,13 @@ group: "navigation"
 <section class="section section--about-me" markdown="1">
 
 # About me
-I'm 24 years old; completed my Bachelor's Degree in Computer Engineering. 
+I'm 25 years old; completed my Bachelor's Degree in Computer Engineering. 
 
 I'm a whole hearted food lover: fan of burgers, pizza, salad, steak, and tacos. 
 
-I'm considered, by many, a tech enthusiast. I find myself Beta testing all the things: Google Chrome Canary, Android Oreo, WebKit. 
+Opinions are my own.
+
+"Think twice, code once!" whenever possible.
 
 I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS), and believes it's up to us to help Make the Web great, again. 
 
@@ -92,10 +94,12 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
         - jQuery
         - TypeScript
         - React
-        - Angular (1.x, 5.0)        
+        - Angular (1.x, 5.x)        
         - Node.js
     5. C#
         - ASP.NET (MVC)
+        - ASP.NET CORE
+        - Console Applications
     6. SQL
         - MySQL
         - Microsoft SQL Server
@@ -104,10 +108,8 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
         - WordPress
     8. Ruby
         - Rails
-        - Jekyll
-    9. Python
-        - Flask
-    10. C++
+        - Jekyll    
+    9. C++
 
 </section>
 

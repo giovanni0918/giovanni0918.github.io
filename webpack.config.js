@@ -36,11 +36,12 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['env'],
+                        presets: ['@babel/preset-env'],
                         plugins: [
-                            "syntax-async-functions",
-                            "transform-regenerator",
-                            "transform-async-to-generator"
+                            "@babel/plugin-proposal-async-generator-functions",
+                            "@babel/plugin-transform-async-to-generator",
+                            "@babel/plugin-transform-regenerator",
+                            "@babel/plugin-transform-runtime"
                         ]
                     }
                 }

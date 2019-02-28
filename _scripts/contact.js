@@ -1,5 +1,5 @@
 /*
- * Copyright 2017 Giovanni Orlando Rivera
+ * Copyright 2019 Giovanni Orlando Rivera
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import firebase, {app, database} from '../node_modules/firebase';
+import firebase from '../node_modules/firebase/app';
+import '../node_modules/firebase/database';
 
 const config = {
     authDomain: "giovanniorlandorivera.firebaseapp.com",
