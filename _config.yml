@@ -17,24 +17,31 @@ permalink: /:categories/:title
 profiles:
  - account: facebook
    username: giovanni0918
+   type: dir
  - account: github
    username: giovanni0918
- - account: google
-   username: +giovanniorlandoi7
+   type: dir
  - account: instagram
    username: giovanni0918
+   type: dir
  - account: linkedin
    username: in/giovanni-orlando
+   type: dir
  - account: medium
-   username: giovanni0918
+   username: '@giovanni0918'
+   type: dir
  - account: pinterest
    username: giovanniorlando
+   type: dir
  - account: tumblr
    username: giovanni0918
+   type: subdomain
  - account: twitter
    username: giovanni0918
+   type: dir
  - account: youtube
    username: giovanniorlandoi7
+   type: dir
 
 tabs: 
  - title: Home

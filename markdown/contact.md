@@ -14,10 +14,19 @@ excerpt: Contact page for https://giovanni-orlando.com • Built by Giovanni Orl
     <nav class="nav">
     <ul class="social-link__list">
         {% for profile in site.profiles %}
-        <li class="social-link__list-item">
-        <a href="https://{{profile.account}}.com/{{profile.username}}/" title="Link to {{profile.account}}.com/{{profile.username}}/"
-            target="_blank" rel="noopener">{{profile.account}}: {{profile.username}}</a>
-        </li>
+            {% if profile.type == 'dir' %}
+            <li class="social-link__list-item">
+                <a href="https://{{profile.account}}.com/{{profile.username}}/" 
+                    title="Link to {{profile.account}}.com/{{profile.username}}/"
+                    target="_blank" rel="noopener">{{profile.account}}: {{profile.username}}</a>
+            </li>            
+            {% elsif profile.type == 'subdomain' %}
+            <li class="social-link__list-item">
+                <a href="https://{{profile.username}}.{{profile.account}}.com/" 
+                    title="Link to {{profile.username}}.{{profile.account}}.com/"
+                    target="_blank" rel="noopener">{{profile.account}}: {{profile.username}}</a>
+            </li>
+            {% endif %}  
         {% endfor %}
     </ul>
     </nav>
