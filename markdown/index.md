@@ -58,6 +58,12 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
 
 # Certifications
 
+- [Certified Scrum Product Owner (CSPO)](https://www.scrumalliance.org/community/profile/gorlandori)  
+    Scrum Alliance Product Owner certification.  
+    
+- [Certified ScrumMaster (CSM)](https://www.scrumalliance.org/community/profile/gorlandori)  
+    Scrum Alliance ScrumMaster certification.  
+
 - [ACIT 2017 iOS Service Certification Exam (iOS-17A)](https://support.apple.com/en-us/HT207708)  
     Use the correct engaging questions to better troubleshoot a customer issue. Demonstrate deductive reasoning through logical question progression. Correctly use evaluative questions to isolate customer issues to educational, environmental, software, or hardware opportunities. 
     
