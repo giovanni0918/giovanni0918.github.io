@@ -31,11 +31,11 @@
   },
   "scripts": {
     "start": "npm run webpack && npm run copy && npm run serve",
-    "build": "./node_modules/.bin/webpack --mode production && yarn copy && JEKYLL_ENV=production bundle exec jekyll build",
+    "build": "./node_modules/.bin/webpack --mode production && npm run copy && JEKYLL_ENV=production bundle exec jekyll build",
     "copy": "cp -r _assets/images dist/ && cp -r node_modules/workbox-sw/build/* dist/",
     "serve": "bundle exec jekyll serve",
     "webpack": "./node_modules/.bin/webpack --mode development",
-    "windows-build": "./node_modules/.bin/webpack --mode production && yarn copy && set \"JEKYLL_ENV=production\" && bundle exec jekyll build"
+    "windows-build": "./node_modules/.bin/webpack --mode production && npm run copy && set \"JEKYLL_ENV=production\" && bundle exec jekyll build"
   },
   "repository": "git+https://github.com/giovanni0918/giovanni0918.github.io.git",
   "keywords": [

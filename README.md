@@ -19,13 +19,13 @@ Install jekyll (assumes ruby is installed)
 
 Install dependencies (assumes jekyll and node are installed)  
 - `$ bundle install` 
-- `$ yarn install` 
+- `$ npm install` 
 
 Serve locally  
-- `yarn start` 
+- `npm start` 
 
 # LICENSE
 
 - License: [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
-- Copyright 2018: [Giovanni Orlando Rivera](https://github.com/giovanni0918)
+- Copyright 2020: [Giovanni Orlando Rivera](https://github.com/giovanni0918)
 - Website: <https://giovanni-orlando.com>
