@@ -5,6 +5,7 @@ _site
 #Dependencies
 /bower_components
 /node_modules
+/vendor
 
 # Compiled source
 *.com

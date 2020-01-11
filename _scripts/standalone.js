@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Giovanni Orlando Rivera
+ * Copyright 2020 Giovanni Orlando Rivera
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 const SUPPORTS_STANDALONE = () => {
-  
+
   if (('standalone' in window.navigator) && window.navigator['standalone']) {
 
     let currentNode, location = document.location, stop = /^(a|html)$/i;

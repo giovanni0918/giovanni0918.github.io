@@ -1,7 +1,9 @@
-importScripts('/dist/sw-toolbox.js');
-toolbox.options.debug = false;
-
-toolbox.precache([
+importScripts('/dist/workbox-sw.js');
+workbox.setConfig({
+    debug: true,
+});
+// Revisioned files added via a glob
+workbox.precaching.precache([
     '/',
     '/pages/blog/',
     '/pages/contact/',
@@ -15,19 +17,46 @@ toolbox.precache([
     '/dist/images/web-developer.svg'
 ]);
 
-// Pages
-toolbox.router.get('/', toolbox.fastest);
-toolbox.router.get('/pages/blog/', toolbox.fastest);
-toolbox.router.get('/pages/contact/', toolbox.fastest);
-toolbox.router.get('/pages/services/', toolbox.fastest);
-toolbox.router.get('/pages/twitter/', toolbox.fastest);
+workbox.routing.registerRoute(new RegExp('/'), new workbox.strategies.StaleWhileRevalidate());
+
+workbox.routing.registerRoute(new RegExp('index.html'), new workbox.strategies.StaleWhileRevalidate());
+
+workbox.routing.registerRoute(new RegExp('/pages/blog/'), new workbox.strategies.StaleWhileRevalidate());
+workbox.routing.registerRoute(new RegExp('/pages/contact/'), new workbox.strategies.StaleWhileRevalidate());
+workbox.routing.registerRoute(new RegExp('/pages/services/'), new workbox.strategies.StaleWhileRevalidate());
+workbox.routing.registerRoute(new RegExp('/pages/twitter/'), new workbox.strategies.StaleWhileRevalidate());
+workbox.routing.registerRoute(new RegExp('/'), new workbox.strategies.StaleWhileRevalidate());
 
 // Scripts and Styles
-toolbox.router.get('/dist/app.bundle.js', toolbox.fastest);
-toolbox.router.get('/dist/style.bundle.css', toolbox.fastest);
+workbox.routing.registerRoute(
+    new RegExp('/dist/app.bundle.js'),
+    new workbox.strategies.StaleWhileRevalidate()
+);
+workbox.routing.registerRoute(
+    new RegExp('/dist/style.bundle.css'),
+    new workbox.strategies.StaleWhileRevalidate()
+);
 
 // Images
-toolbox.router.get('/dist/images/avatar__img.jpg', toolbox.fastest);
-toolbox.router.get('/dist/images/food-lover.svg', toolbox.fastest);
-toolbox.router.get('/dist/images/tech-enthusiast.svg', toolbox.fastest);
-toolbox.router.get('/dist/images/web-developer.svg', toolbox.fastest);
+workbox.routing.registerRoute(
+    new RegExp('/dist/images/avatar__img.jpg'),
+    new workbox.strategies.StaleWhileRevalidate()
+);
+workbox.routing.registerRoute(
+    new RegExp('/dist/images/food-lover.svg'),
+    new workbox.strategies.StaleWhileRevalidate()
+);
+workbox.routing.registerRoute(
+    new RegExp('/dist/images/tech-enthusiast.svg'),
+    new workbox.strategies.StaleWhileRevalidate()
+);
+workbox.routing.registerRoute(
+    new RegExp('/dist/images/web-developer.svg'),
+    new workbox.strategies.StaleWhileRevalidate()
+);
+
+workbox.routing.registerRoute(new RegExp('manifest.json'), new workbox.strategies.StaleWhileRevalidate());
+
+workbox.routing.registerRoute(new RegExp('/dist/images/icons/.*.png'), new workbox.strategies.StaleWhileRevalidate());
+
+workbox.routing.registerRoute(new RegExp('/dist/workbox-sw.js'), new workbox.strategies.StaleWhileRevalidate());

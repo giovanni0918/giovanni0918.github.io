@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Giovanni Orlando Rivera
+ * Copyright 2020 Giovanni Orlando Rivera
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ import '../node_modules/firebase/database';
 
 const config = {
     authDomain: "giovanniorlandorivera.firebaseapp.com",
-    databaseURL: "https://giovanniorlandorivera.firebaseio.com",  
+    databaseURL: "https://giovanniorlandorivera.firebaseio.com",
 };
 
 firebase.initializeApp(config);

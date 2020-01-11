@@ -14,11 +14,13 @@ group: "navigation"
 # About me
 I'm 25 years old; completed my Bachelor's Degree in Computer Engineering. 
 
-I'm a whole hearted food lover: fan of burgers, pizza, salad, steak, and tacos. 
+Currently learning [Photoshop](https://www.adobe.com/products/photoshop.html) and [Swift](https://github.com/apple/swift) on my spare time.
 
 Opinions are my own.
 
-"Think twice, code once!" whenever possible.
+Food Lover and Tech Enthusiast.
+
+[Ford](https://www.shareholder.ford.com/home/default.aspx), [Jetblue](https://www.jetblue.com), and [Nokia](https://www.nokia.com/about-us/investors/) shareholder.
 
 I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS), and believes it's up to us to help Make the Web great, again. 
 
@@ -46,7 +48,7 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
     Software developer (from 2017 to present)
 
 - [Vyrtuo Corporation]()  
-    Full stack web developer (from 2015 to present)
+    Full stack web developer (from 2015 to 2018)
 
 - [Modernica Group Corporation](https://www.facebook.com/modernicaonline)  
     Apple Certified iOS Technician (from 2014 to 2017)
@@ -76,13 +78,6 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
     
     Describe the impact of poor notes on the repair cycle and customer satisfaction. Demonstrate basic troubleshooting and deductive reasoning skills.
 
-- [iOS Qualification Exam 2015]()  
-    Deliver customer technical support. Actively diagnose and repair iOS products released up to 2015. Documentation of troubleshooting, diagnostic and repair procedures. Order and receive parts. 
-    
-    Identify the iOS devices that have Apple-specific features and components. Provide an overview of the steps in the device setup and activation process. 
-    
-    Recognize and respond to SIM Card Alerts during the activation process. Describe the benefits of iTunes and iCloud backups.
-
 </section>
 
 
@@ -95,22 +90,23 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
     2. Markdown
     3. CSS 3
         - Bootstrap
-        - Materialize    
+        - Bulma
+        - Materialize
     4. JavaScript (ES2015, ES2016)
-        - jQuery
-        - TypeScript
         - React
-        - Angular (1.x, 5.x)        
         - Node.js
+        - TypeScript
+        - Angular (1.x, 8.x)
+        - jQuery
     5. C#
-        - ASP.NET (MVC)
         - ASP.NET CORE
+        - ASP.NET (MVC)        
         - Console Applications
     6. SQL
         - MySQL
         - Microsoft SQL Server
     7. PHP
-        - Laravel (5.x)
+        - Laravel (6.x)
         - WordPress
     8. Ruby
         - Rails

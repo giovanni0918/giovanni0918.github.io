@@ -74,3 +74,4 @@ exclude:
   - app.entry.js
   - style.entry.js
   - gulpfile.js
+  - vendor

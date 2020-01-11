@@ -8,15 +8,18 @@ excerpt: About page for https://giovanni-orlando.com • Built by Giovanni Orlan
 <section class="section section--about-me" markdown="1">
 
 # About me
-I'm 23 years old; completed my Bachelor's Degree in Computer Engineering.
 
-I'm a whole hearted food lover: fan of burgers, pizza, salad, steak, and tacos.
+<p>I am 25 years old;&nbsp;from Carolina, Puerto Rico.<br>I have a Bachelor's Degree on <a href="http://www.pupr.edu/news/ececs-young-stars-to-watch-2013/">Computer Engineering</a>, at the Polytechnic University of Puerto Rico.</p>
 
-I'm considered by many a tech enthusiast, I find myself Beta testing all the things: Google Chrome Canary, Android 7.1 Nougat, WebKit.
+<p>I work as a Software Developer at <a href="http://www.itdgpr.com/">IT Developers Group (ITDG)</a>.</p>
 
-I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS), and believes it's up to us to help Make the Web great, again.
+<p>Currently learning <a href="https://www.adobe.com/products/photoshop.html">Photoshop</a> and <a href="https://github.com/apple/swift">Swift</a> on my spare time.</p>
 
-On the process of branching out. Working on starting up a development agency alongside 2 of my colleagues.
+<p>Food Lover and Tech Enthusiast.</p>
+
+<p>Website: <a href="https://giovanni-orlando.com">giovanni-orlando.com</a></p>
+
+<p>Twitter: <a href="https://twitter.com/giovanni0918" target="_blank">@giovanni0918</a></p>
 
 Like blogs? Check out my work: <https://giovanni-orlando.com/pages/blog/>
 
