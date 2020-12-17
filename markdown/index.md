@@ -12,17 +12,19 @@ group: "navigation"
 <section class="section section--about-me" markdown="1">
 
 # About me
-I'm 25 years old; completed my Bachelor's Degree in Computer Engineering. 
+I'm 26 years old and live in Puerto Rico. I am engaged to Zulymer Amanda.
 
-Currently learning [Photoshop](https://www.adobe.com/products/photoshop.html) and [Swift](https://github.com/apple/swift) on my spare time.
+I work as a Sr. Software Developer for ITDG, and I specialize in building apps using C# [.NET](https://docs.microsoft.com/en-us/dotnet/core/dotnet-five) and [Angular](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7).
+
+Currently learning [Swift](https://github.com/apple/swift) on my spare time.
 
 Opinions are my own.
 
 Food Lover and Tech Enthusiast.
 
-[Ford](https://www.shareholder.ford.com/home/default.aspx), [Jetblue](https://www.jetblue.com), and [Nokia](https://www.nokia.com/about-us/investors/) shareholder.
+[Ford](https://www.shareholder.ford.com/home/default.aspx) and [Apple](https://investor.apple.com/investor-relations/default.aspx) shareholder.
 
-I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS), and believes it's up to us to help Make the Web great, again. 
+"Supporting another's success won't ever dampen yours"
 
 </section>
 
@@ -45,10 +47,10 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
 # Experience
 
 - [IT Developers Group](http://www.itdgpr.com/)  
-    Software developer (from 2017 to present)
+    Sr. Software Developer (from 2017 to present)
 
 - [Vyrtuo Corporation]()  
-    Full stack web developer (from 2015 to 2018)
+    Full stack Web Developer (from 2015 to 2018)
 
 - [Modernica Group Corporation](https://www.facebook.com/modernicaonline)  
     Apple Certified iOS Technician (from 2014 to 2017)
@@ -59,6 +61,9 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
 <section class="section section--certifications" markdown="1">
 
 # Certifications
+
+- [Certified SAFe 5 Agilist](https://www.youracclaim.com/badges/792127b9-1ceb-4565-96f0-31600914ea22/linked_in_profile)  
+    SAFe 5.0 certification
 
 - [Certified Scrum Product Owner (CSPO)](https://www.scrumalliance.org/community/profile/gorlandori)  
     Scrum Alliance Product Owner certification.  
@@ -92,21 +97,18 @@ I'm a Full Stack Web Developer who lives and breathes Open Source Software (OSS)
         - Bootstrap
         - Bulma
         - Materialize
-    4. JavaScript (ES2015, ES2016)
-        - React
-        - Node.js
-        - TypeScript
-        - Angular (1.x, 8.x)
-        - jQuery
+    4. JavaScript
+        - Angular
+        - TypeScript 
+        - React 
+        - Node.js 
+        - jQuery 
     5. C#
-        - ASP.NET CORE
-        - ASP.NET (MVC)        
-        - Console Applications
+        - ASP.NET CORE 
     6. SQL
-        - MySQL
         - Microsoft SQL Server
-    7. PHP
-        - Laravel (6.x)
+        - MySQL
+    7. PHP        
         - WordPress
     8. Ruby
         - Rails
