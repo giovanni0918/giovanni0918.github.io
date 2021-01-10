@@ -1,5 +1,5 @@
 _site
-/dist
+#/dist
 .sass-cache
 .jekyll-metadata
 
