@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Giovanni Orlando Rivera
+ * Copyright 2021 Giovanni Orlando Rivera
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 import SUPPORTS_STANDALONE from './_scripts/standalone';
-import FETCH_BLOG_POSTS from './_scripts/blog';
-import FETCH_REPOS from './_scripts/repos';
-import HYDRATE_CONTACT_FORM from './_scripts/contact';
+import FETCH_BLOG_POSTS from './_scripts/blog/blog';
+import FETCH_REPOS from './_scripts/repositories/repositories';
+import HYDRATE_CONTACT_FORM from './_scripts/contact/contact-form';
 
 SUPPORTS_STANDALONE();
 FETCH_BLOG_POSTS();

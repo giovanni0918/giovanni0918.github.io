@@ -33,18 +33,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env'],
-                        plugins: [
-                            "@babel/plugin-proposal-async-generator-functions",
-                            "@babel/plugin-transform-async-to-generator",
-                            "@babel/plugin-transform-regenerator",
-                            "@babel/plugin-transform-runtime"
-                        ]
-                    }
-                }
+                use: 'babel-loader'
             },
             {
                 test: /\.html$/,

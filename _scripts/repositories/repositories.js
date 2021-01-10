@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Giovanni Orlando Rivera
+ * Copyright 2021 Giovanni Orlando Rivera
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,27 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-const FETCH_REPOS = (url = 'https://api.github.com/users/giovanni0918/repos') => {
+import { GithubRepositoriesService } from "./github-repositories.service";
+
+const FETCH_REPOS = () => {
 
   if (window.location.pathname === '/') {
 
-    let container = document.querySelector(".repo__list");
+    const githubRepositoriesService = new GithubRepositoriesService();
+
+    const container = document.querySelector(".repo__list");
 
     if (navigator.onLine) {
 
-      fetch(url)
-        .then(response => response.json()
-          .then(data => {
-
-            const repos = data.map(repo => {
-              return {
-                "id": repo.id,
-                "name": repo.name,
-                "description": repo.description,
-                "homepage": repo.homepage,
-                "html_url": repo.html_url
-              }
-            }).sort((a, b) => b.id - a.id);
+      githubRepositoriesService.getAll()
+          .then(repos => {           
 
             repos.forEach((repo, index, arr) => {
 
@@ -59,7 +52,7 @@ const FETCH_REPOS = (url = 'https://api.github.com/users/giovanni0918/repos') =>
 
             });
 
-          }))
+          })
         .catch(error => console.warn('Fetch Error :-S', error.message));
 
     } else {

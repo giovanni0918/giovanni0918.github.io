@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Giovanni Orlando Rivera
+ * Copyright 2021 Giovanni Orlando Rivera
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,24 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import firebase from '../node_modules/firebase/app';
-import '../node_modules/firebase/database';
-
-const config = {
-    authDomain: "giovanniorlandorivera.firebaseapp.com",
-    databaseURL: "https://giovanniorlandorivera.firebaseio.com",
-};
-
-firebase.initializeApp(config);
-const version = '/v0';
-const api = firebase.database().ref(version);
+import { ContactService } from './contact.service';
 
 const HYDRATE_CONTACT_FORM = () => {
     const form = document.querySelector('.contact-form');
+    const contactService = new ContactService();
 
     function onSubmit(event) {
         event.preventDefault();
-        console.log(event);
+
         const button = document.querySelector('#contact-form__button');
         const name = document.querySelector('input[name="name"]').value.replace(/[^A-z ]/g, '');
         const email = document.querySelector('input[name="email"]').value.toLowerCase();
@@ -38,25 +29,25 @@ const HYDRATE_CONTACT_FORM = () => {
         const body = document.querySelector('textarea[name="body"]').value.replace(/[^\w .+]/g, '');
 
         const message = { name: name, email: email, subject: subject, body: body };
-        var messageKey = api.child('messages').push().key;
 
         button.disabled = true;
 
-        api.child('/messages/' + messageKey + '/').set(message)
-            .then(function () {
-                alert('Message sent successfully.');
-                form.reset();
-            })
-            .catch(function (error) {
-                alert('Your message could not be sent at the moment.')
-                console.warn(error);
+        contactService.sendMessage(message)
+            .then(function (result) {
+
+                const { success, error } = result;
+
+                if (success === true) {
+                    alert('Message sent successfully.');
+                    form.reset();
+                } else {
+                    alert('Your message could not be sent at the moment.')
+                    console.warn(error);
+                }
             })
             .then(function () {
                 button.disabled = false;
             });
-
-        api.child('/user-messages/' + name.replace(/ /g, '').toLowerCase()
-            + '/' + messageKey + '/').set(message);
     };
 
     form.addEventListener('submit', onSubmit);
