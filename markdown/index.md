@@ -12,7 +12,7 @@ group: "navigation"
 <section class="section section--about-me" markdown="1">
 
 # About me
-I'm 26 years old and live in Puerto Rico. I am engaged to Zulymer Amanda.
+I'm 27 years old and live in Puerto Rico. I am engaged to Zulymer Amanda.
 
 I work as a Sr. Software Developer for ITDG, and I specialize in building apps using C# [.NET](https://docs.microsoft.com/en-us/dotnet/core/dotnet-five) and [Angular](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7).
 
@@ -60,7 +60,10 @@ Food Lover and Tech Enthusiast.
 
 <section class="section section--certifications" markdown="1">
 
-# Certifications
+# Certifications  
+
+- [Microsoft Certified: Azure Fundamentals AZ-900](https://www.youracclaim.com/badges/11cad8da-a5a6-47bf-a66f-e1eb1220128f)  
+    Azure AZ-900 certification. Foundational knowledge of cloud concepts such as: compute; storage; networking; security and privacy; and how those services are provided with Microsoft Azure.
 
 - [Certified SAFe 5 Agilist](https://www.youracclaim.com/badges/792127b9-1ceb-4565-96f0-31600914ea22/linked_in_profile)  
     SAFe 5.0 certification
